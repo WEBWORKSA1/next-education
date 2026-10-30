@@ -1,0 +1,14 @@
+# Next.Education — GitHub Pages (Jekyll) configuration
+# Pages are HTML with front matter; the shared chrome lives in _layouts/default.html.
+title: Next.Education
+description: Choose your next step in education. Compare routes, find scholarships, run the numbers and get matched free.
+url: "https://next.education"
+markdown: kramdown
+exclude:
+  - README.md
+  - PROMPT.md
+  - _src
+  - Gemfile
+  - Gemfile.lock
+include:
+  - ads.txt

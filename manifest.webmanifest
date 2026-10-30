@@ -1,0 +1,14 @@
+{
+  "name": "Next.Education",
+  "short_name": "Next.Education",
+  "description": "Choose your next step in education: compare routes, find scholarships, run the numbers.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F6F8FC",
+  "theme_color": "#14213D",
+  "icons": [
+    { "src": "assets/img/logo.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
