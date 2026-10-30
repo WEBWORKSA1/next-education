@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+{% if page.base %}<script>document.write('<base href="'+(location.hostname.indexOf("github.io")>-1?"/next-education/":"/")+'">');</script>
+{% endif %}<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.full_title | escape }}</title>
+<meta name="description" content="{{ page.description | escape }}">
+<link rel="canonical" href="{{ page.canonical }}">
+<meta name="robots" content="{{ page.robots }}">
+<meta property="og:type" content="{{ page.og_type }}">
+<meta property="og:site_name" content="Next.Education">
+<meta property="og:title" content="{{ page.og_title | escape }}">
+<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:url" content="{{ page.canonical }}">
+<meta property="og:image" content="https://next.education/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14213D">
+<link rel="icon" href="{{ page.root }}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ page.root }}assets/img/logo.png">
+<link rel="manifest" href="{{ page.root }}manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ page.root }}assets/css/style.css">
+<script>(function(){try{var t=JSON.parse(localStorage.getItem("ne-theme"));if(!t&&matchMedia("(prefers-color-scheme: dark)").matches)t="dark";if(t)document.documentElement.setAttribute("data-theme",t);if(JSON.parse(localStorage.getItem("ne-consent"))==="essential"){(window.adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=1;}}catch(e){}})();window.NE_ROOT="{{ page.root }}";</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+
+</head>
+<body {{ page.body_attrs }}>
+<a class="skip" href="#main">Skip to content</a>
+<div class="notice-bar"><div class="wrap"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website, domain name, sponsorship, advertisement or partnership.</a></div></div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ page.root }}index.html" aria-label="Next.Education home"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#14213D"/><path d="M9 29h9a5 5 0 0 0 5-5v-8a5 5 0 0 1 5-5h3" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/><circle cx="9" cy="29" r="3.2" fill="#fff"/><circle cx="31" cy="11" r="4.4" fill="#FFB703"/></svg><span>Next<span class="dot">.</span>Education</span></a>
+    <nav class="nav" aria-label="Main"><a href="{{ page.root }}programs.html"{% if page.nav == "programs" %} aria-current="page"{% endif %}>Programs</a><a href="{{ page.root }}scholarships.html"{% if page.nav == "scholarships" %} aria-current="page"{% endif %}>Scholarships</a><a href="{{ page.root }}tools.html"{% if page.nav == "tools" %} aria-current="page"{% endif %}>Tools</a><a href="{{ page.root }}learn.html"{% if page.nav == "learn" %} aria-current="page"{% endif %}>Learn</a><a href="{{ page.root }}guides.html"{% if page.nav == "guides" %} aria-current="page"{% endif %}>Guides</a><a href="{{ page.root }}study-abroad.html"{% if page.nav == "abroad" %} aria-current="page"{% endif %}>Study abroad</a><a href="{{ page.root }}contests.html"{% if page.nav == "contests" %} aria-current="page"{% endif %}>Contests</a></nav>
+    <div class="header-actions">
+      <button class="icon-btn" type="button" data-open-search aria-label="Search the site (press /)"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm9 16-4.3-4.3"/></svg></button>
+      <button class="icon-btn" type="button" id="theme-toggle" aria-label="Switch to dark theme"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg></button>
+      <a class="btn btn-ghost btn-sm btn-donate" href="{{ page.root }}donate.html">Donate</a>
+      <a class="btn btn-sm btn-match" href="{{ page.root }}match.html">Get matched</a>
+      <button class="icon-btn menu-btn" type="button" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-scrim" data-close-drawer></div>
+  <div class="drawer-panel" role="dialog" aria-label="Menu">
+    <button class="icon-btn" type="button" data-close-drawer aria-label="Close menu"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <nav aria-label="Mobile"><a href="{{ page.root }}programs.html"{% if page.nav == "programs" %} aria-current="page"{% endif %}>Programs</a><a href="{{ page.root }}scholarships.html"{% if page.nav == "scholarships" %} aria-current="page"{% endif %}>Scholarships</a><a href="{{ page.root }}tools.html"{% if page.nav == "tools" %} aria-current="page"{% endif %}>Tools</a><a href="{{ page.root }}learn.html"{% if page.nav == "learn" %} aria-current="page"{% endif %}>Learn</a><a href="{{ page.root }}guides.html"{% if page.nav == "guides" %} aria-current="page"{% endif %}>Guides</a><a href="{{ page.root }}study-abroad.html"{% if page.nav == "abroad" %} aria-current="page"{% endif %}>Study abroad</a><a href="{{ page.root }}contests.html"{% if page.nav == "contests" %} aria-current="page"{% endif %}>Contests</a><a href="{{ page.root }}match.html">Get matched</a><a href="{{ page.root }}donate.html">Donate</a><a href="{{ page.root }}careers.html">Careers</a><a href="{{ page.root }}advertise.html">Advertise</a><a href="{{ page.root }}contact.html">Contact</a></nav>
+    <a class="btn btn-block" href="{{ page.root }}match.html">Get matched free</a>
+  </div>
+</div>
+<main id="main">
+
+{{ content }}
+</main>
+<section class="section-tight band-ink" aria-labelledby="nl-title">
+  <div class="wrap newsletter">
+    <div><h2 id="nl-title" style="font-size:var(--step-3)">Your next step, in your inbox</h2>
+    <p>Pick what you want: the weekly digest, scholarship alerts or the monthly top five. Free, no spam, leave any time.</p></div>
+    <form data-ne-form data-subject="Newsletter signup" data-bonus="newsletter" data-success="You're subscribed. Watch for a welcome email.">
+      <label class="visually-hidden" for="nl-email">Email address</label>
+      <input id="nl-email" type="email" name="email" placeholder="you@example.com" required autocomplete="email">
+      <label class="visually-hidden" for="nl-list">Choose a list</label>
+      <select id="nl-list" name="list" style="flex:0 1 210px"><option>Weekly digest</option><option>Scholarship alerts</option><option>Monthly top five</option></select>
+      <div class="hp" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+      <button class="btn" type="submit">Subscribe</button>
+      <p class="consent" style="color:#AFC0DD;flex-basis:100%;margin:0">By subscribing you agree to receive emails from Next.Education. See our <a href="{{ page.root }}privacy.html">privacy policy</a>.</p>
+    </form>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="{{ page.root }}index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#14213D"/><path d="M9 29h9a5 5 0 0 0 5-5v-8a5 5 0 0 1 5-5h3" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/><circle cx="9" cy="29" r="3.2" fill="#fff"/><circle cx="31" cy="11" r="4.4" fill="#FFB703"/></svg><span>Next<span class="dot">.</span>Education</span></a>
+        <p style="margin-top:1rem;max-width:34ch">Free tools, guides and matching to help you choose your next step in education, and pay less for it.</p>
+        <p><a class="btn btn-sm" href="{{ page.root }}match.html">Get matched free</a></p>
+      </div>
+      <div><h2>Explore</h2><ul>
+        <li><a href="{{ page.root }}programs.html">Program explorer</a></li><li><a href="{{ page.root }}scholarships.html">Scholarship finder</a></li>
+        <li><a href="{{ page.root }}study-abroad.html">Study abroad</a></li><li><a href="{{ page.root }}learn.html">Free learning hub</a></li>
+        <li><a href="{{ page.root }}guides.html">Guides</a></li><li><a href="{{ page.root }}tools.html">All tools</a></li></ul></div>
+      <div><h2>Get involved</h2><ul>
+        <li><a href="{{ page.root }}donate.html">Donate</a></li><li><a href="{{ page.root }}contests.html">Contests and prizes</a></li>
+        <li><a href="{{ page.root }}careers.html">Careers</a></li><li><a href="{{ page.root }}advertise.html">Advertise and sponsor</a></li>
+        <li><a href="{{ page.root }}partners.html">For schools</a></li><li><a href="https://web.works/contact" target="_blank" rel="noopener">Buy or partner on this domain</a></li></ul></div>
+      <div><h2>Company</h2><ul>
+        <li><a href="{{ page.root }}about.html">About</a></li><li><a href="{{ page.root }}editorial-standards.html">Editorial standards</a></li>
+        <li><a href="{{ page.root }}contact.html">Contact</a></li><li><a href="{{ page.root }}faq.html">FAQ</a></li>
+        <li><a href="{{ page.root }}sitemap.html">Sitemap</a></li></ul></div>
+      <div><h2>Legal</h2><ul>
+        <li><a href="{{ page.root }}privacy.html">Privacy policy</a></li><li><a href="{{ page.root }}terms.html">Terms of use</a></li>
+        <li><a href="{{ page.root }}disclaimer.html">Disclaimer and trademarks</a></li><li><a href="{{ page.root }}contest-rules.html">Official contest rules</a></li>
+        <li><a href="{{ page.root }}privacy.html#cookies">Cookies</a></li></ul></div>
+    </div>
+    <div class="legal">
+      <p>&copy; <span data-year>2026</span> Next.Education. All rights reserved. Original text, tools and design on this site are protected by copyright. Embedded videos and linked resources belong to their respective owners.</p>
+      <p><strong>Trademark notice:</strong> Next.Education is an independent website. It is not affiliated with, endorsed by or sponsored by any company, school, product or service that uses "Next Education", "NextEducation" or a similar name. All other trademarks belong to their owners. <a href="{{ page.root }}disclaimer.html">Read the full disclosure</a>.</p>
+      <p><strong>How we're funded:</strong> advertising (including Google AdSense), partner referrals and reader donations. Partners never pay for editorial coverage. Information is general and educational, not professional advice.</p>
+    </div>
+  </div>
+</footer>
+<div class="sticky-cta" id="sticky-cta"><p>Not sure what's next?</p><div style="display:flex;gap:.4rem"><a class="btn btn-sm" href="{{ page.root }}match.html">Get matched free</a><button class="icon-btn" id="sticky-close" type="button" aria-label="Dismiss"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div></div>
+<button class="icon-btn to-top" id="to-top" type="button" aria-label="Back to top"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></button>
+<div class="cookie" id="cookie" role="region" aria-label="Cookie notice">
+  <p>We use cookies for essential features and, with Google AdSense, to show and measure ads. Choose "Essential only" for non-personalised ads. <a href="{{ page.root }}privacy.html#cookies">Details</a></p>
+  <div class="row"><button class="btn btn-sm" type="button" data-consent="all">Accept all</button><button class="btn btn-ghost btn-sm" type="button" data-consent="essential">Essential only</button></div>
+</div>
+<div class="modal search-modal" id="search-modal" aria-hidden="true">
+  <div class="modal-scrim" data-close-modal></div>
+  <div class="modal-card" role="dialog" aria-label="Search Next.Education">
+    <button class="icon-btn modal-close" type="button" data-close-modal aria-label="Close search"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <label for="search-input" style="font-family:var(--f-display);font-size:1.3rem">Search Next.Education</label>
+    <input id="search-input" type="search" placeholder="Try nursing, scholarships, loans…" autocomplete="off">
+    <ul class="search-results" id="search-results"></ul>
+  </div>
+</div>
+<div class="modal" id="exit-modal" aria-hidden="true">
+  <div class="modal-scrim" data-close-modal></div>
+  <div class="modal-card" role="dialog" aria-labelledby="exit-title">
+    <button class="icon-btn modal-close" type="button" data-close-modal aria-label="Close"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <h2 id="exit-title" style="font-size:var(--step-3)">Before you go: get your free match report</h2>
+    <p>Six questions, about a minute. You'll get program types that fit your goal, budget and schedule, plus scholarships worth checking.</p>
+    <a class="btn btn-block btn-lg" href="{{ page.root }}match.html">Start my free match</a>
+    <p class="small muted" style="margin:1rem 0 0">Or <a href="{{ page.root }}scholarships.html">browse scholarships</a> first.</p>
+  </div>
+</div>
+<script src="{{ page.root }}assets/js/config.js" defer></script>
+<script src="{{ page.root }}assets/js/main.js" defer></script>
+{% for s in page.scripts %}<script src="{{ page.root }}assets/js/{{ s }}" defer></script>{% endfor %}
+</body>
+</html>

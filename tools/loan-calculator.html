@@ -1,0 +1,74 @@
+---
+layout: "default"
+full_title: "Student loan calculator: monthly payment and total interest | Next.Education"
+og_title: "Student loan calculator: monthly payment and total interest"
+description: "Work out your monthly student loan payment, total interest and payoff schedule, and see how much extra payments save. Works with any currency."
+canonical: "https://next.education/tools/loan-calculator.html"
+robots: "index, follow, max-image-preview:large"
+og_type: "website"
+nav: "tools"
+root: "../"
+scripts: ["tools.js"]
+body_attrs: ""
+base: false
+---
+{% raw %}<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://next.education/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://next.education/tools.html"}, {"@type": "ListItem", "position": 3, "name": "Student loan calculator: monthly payment and total interest", "item": "https://next.education/tools/loan-calculator.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does this work for variable-rate loans?", "acceptedAnswer": {"@type": "Answer", "text": "It assumes a fixed rate. For a variable rate, run it at today's rate and again at a higher rate to see your risk."}}, {"@type": "Question", "name": "Is it better to pay extra or invest?", "acceptedAnswer": {"@type": "Answer", "text": "Paying extra is a guaranteed return equal to your loan's interest rate. Higher-rate loans usually make extra payments the better choice; check for prepayment penalties first."}}, {"@type": "Question", "name": "Is my data stored?", "acceptedAnswer": {"@type": "Answer", "text": "No. The calculation runs entirely in your browser."}}]}</script>
+<header class="page-hero graph"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">/</span> <a href="../tools.html">Tools</a> <span aria-hidden="true">/</span> <span aria-current="page">Student loan calculator</span></nav><h1>Student loan calculator</h1><p class="lede">See your monthly payment, total interest and yearly payoff schedule. Add an extra monthly amount to see how much faster you'd be debt-free.</p></div></header>
+<section class="section-tight">
+  <div class="wrap tool-layout">
+    <form class="card" id="loan-form" onsubmit="return false" aria-label="Loan inputs">
+      <div class="form-grid">
+        <div class="full"><label for="currency">Currency</label><select id="currency"><option>USD</option><option>CAD</option><option>GBP</option><option>INR</option><option>AUD</option><option>EUR</option></select></div>
+        <div><label for="l-amount">Loan amount</label><input id="l-amount" type="number" min="0" step="500" value="30000"></div>
+        <div><label for="l-rate">Interest rate (% per year)</label><input id="l-rate" type="number" min="0" max="40" step="0.05" value="6.5"></div>
+        <div><label for="l-years">Repayment term (years)</label><input id="l-years" type="number" min="1" max="30" step="1" value="10"></div>
+        <div><label for="l-extra">Extra payment per month</label><input id="l-extra" type="number" min="0" step="10" value="0"></div>
+        <div><label for="l-grace">Grace period (months)<span class="hint">Before repayment starts</span></label><input id="l-grace" type="number" min="0" max="60" step="1" value="6"></div>
+        <div><label for="l-accrue">Interest during grace?</label><select id="l-accrue"><option value="1">Yes, it's added to the balance</option><option value="0">No, it's covered</option></select></div>
+      </div>
+    </form>
+    <div class="output" aria-live="polite">
+      <h2 style="font-size:var(--step-1)">Monthly payment</h2>
+      <p class="big" id="l-pay">…</p>
+      <dl>
+        <dt>Balance when repayment starts</dt><dd id="l-cap">…</dd>
+        <dt>Total repaid</dt><dd id="l-total">…</dd>
+        <dt>Total interest</dt><dd id="l-int">…</dd>
+        <dt>With extra payments</dt><dd id="l-saved" style="text-align:right;max-width:24ch">…</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="table-wrap"><table><thead><tr><th>Year</th><th>Principal paid</th><th>Interest paid</th><th>Balance left</th></tr></thead><tbody id="l-table"></tbody></table></div>
+  </div>
+</section>
+
+<div class="wrap"><div class="ad-slot" data-ad="display"></div></div>
+
+<section class="section section-alt">
+  <div class="wrap prose">
+    <h2>How student loan payments are calculated</h2>
+    <p>Most fixed-rate education loans use a standard amortising formula: the same payment each month, with more of it going to interest at the start and more to principal later. The monthly payment is <em>P × r ÷ (1 − (1 + r)<sup>−n</sup>)</em>, where P is the balance, r is the monthly rate and n is the number of months.</p>
+    <p>If interest builds up during a grace period or while you're studying, it's often added to the balance (capitalised) before repayment begins, so you then pay interest on that interest. Toggle the grace setting to see the difference.</p>
+    <h3>Country notes</h3>
+    <ul>
+      <li><strong>United States:</strong> federal student loans offer income-driven repayment plans whose payments depend on income, not this formula. Check current plans at studentaid.gov.</li>
+      <li><strong>Canada:</strong> federal and provincial student loans have their own repayment assistance programs. See canada.ca.</li>
+      <li><strong>United Kingdom:</strong> Student Finance repayments are a percentage of income above a threshold, so this calculator doesn't apply directly. See GOV.UK.</li>
+      <li><strong>India:</strong> bank education loans usually quote an EMI, which this calculator reproduces. Ask whether interest during the moratorium is simple or compounded.</li>
+      <li><strong>Australia:</strong> HELP debts are repaid through the tax system based on income. See StudyAssist.</li>
+    </ul>
+    <aside class="callout"><p><strong>Before you borrow:</strong> exhaust grants and scholarships, compare at least three lenders, and run the <a href="../tools/roi-calculator.html">ROI calculator</a> with total interest included.</p></aside>
+    <p>More in our guide to <a href="../guides/financial-aid-basics.html">grants, loans and work-study</a>.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow faq">
+    <h2>Loan calculator questions</h2>
+    <details><summary>Does this work for variable-rate loans?</summary><p>It assumes a fixed rate. For a variable rate, run it at today's rate and again at a higher rate to see your risk.</p></details>
+    <details><summary>Is it better to pay extra or invest?</summary><p>Paying extra is a guaranteed return equal to your loan's interest rate. Higher-rate loans usually make extra payments the better choice; check for prepayment penalties first.</p></details>
+    <details><summary>Is my data stored?</summary><p>No. The calculation runs entirely in your browser.</p></details>
+  </div>
+</section>
+{% endraw %}
