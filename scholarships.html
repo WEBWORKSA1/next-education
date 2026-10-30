@@ -1,0 +1,85 @@
+---
+layout: "default"
+full_title: "Scholarship finder: fully funded and partial awards worldwide | Next.Education"
+og_title: "Scholarship finder: fully funded and partial awards worldwide"
+description: "Search long-running scholarships and grants in the US, Canada, UK, India, Europe, Asia and Australia, each linked to the funder's official site. Free."
+canonical: "https://next.education/scholarships.html"
+robots: "index, follow, max-image-preview:large"
+og_type: "website"
+nav: "scholarships"
+root: ""
+scripts: ["scholarships.js"]
+body_attrs: ""
+base: false
+---
+{% raw %}<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://next.education/"}, {"@type": "ListItem", "position": 2, "name": "Scholarship finder: fully funded and partial awards worldwide", "item": "https://next.education/scholarships.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does \"full funding\" mean?", "acceptedAnswer": {"@type": "Answer", "text": "Usually tuition plus a living allowance, and sometimes travel and visa costs. Each funder defines it differently, so read the official terms for what's covered."}}, {"@type": "Question", "name": "When should I apply?", "acceptedAnswer": {"@type": "Answer", "text": "Many major international awards close 6 to 12 months before the program starts, and some open a year ahead. Start researching at least 12 to 18 months before you plan to begin."}}, {"@type": "Question", "name": "Can I apply for several scholarships at once?", "acceptedAnswer": {"@type": "Answer", "text": "Usually yes, though some awards can't be combined. Applying widely, especially to smaller and local awards, is one of the most reliable ways to win something."}}, {"@type": "Question", "name": "Does Next.Education award its own scholarships?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We run a monthly award and an essay prize funded by sponsors and reader donations. See contests and prizes."}}]}</script>
+<header class="page-hero graph"><div class="wrap"><h1>Scholarship finder</h1><p class="lede">Long-running government, foundation and university awards, each linked straight to the funder. Filter by level, host country and funding, then sign up for alerts so you never miss a window.</p></div></header>
+<section class="section-tight">
+  <div class="wrap">
+    <aside class="callout warn" style="margin-top:0"><p><strong>Never pay to apply.</strong> Legitimate scholarships don't charge application or "processing" fees and never guarantee you'll win. Always apply on the funder's own website.</p></aside>
+    <div class="filters" role="search" aria-label="Filter scholarships">
+      <label class="visually-hidden" for="s-q">Search scholarships</label>
+      <input id="s-q" type="search" placeholder="Search, e.g. Japan, STEM, Commonwealth">
+      <label class="visually-hidden" for="s-level">Level</label>
+      <select id="s-level"><option value="">All levels</option><option value="ug">Undergraduate</option><option value="masters">Master's / postgraduate</option><option value="phd">PhD / research</option></select>
+      <label class="visually-hidden" for="s-host">Where you'd study</label>
+      <select id="s-host"><option value="">Any country</option></select>
+      <label class="visually-hidden" for="s-fund">Funding</label>
+      <select id="s-fund"><option value="">Any funding</option><option>Full</option><option>Partial</option><option>Varies</option></select>
+    </div>
+    <p class="result-count" id="s-count" aria-live="polite"></p>
+    <div class="grid g3" id="schol-grid"><noscript><p>Turn on JavaScript to search scholarships.</p></noscript></div>
+    <p class="small muted" style="margin-top:1.25rem">Eligibility, amounts and deadlines change every cycle. We list programs with a long track record and link to the official source; confirm details there before you apply. Know an award we should add? <a href="contact.html?topic=Scholarship%20suggestion">Suggest it</a>.</p>
+  </div>
+</section>
+
+<div class="wrap"><div class="ad-slot" data-ad="display"></div></div>
+
+<section class="section section-alt" id="alerts">
+  <div class="wrap split">
+    <div>
+      <h2>Get scholarship alerts for your profile</h2>
+      <p>Twice a month: new awards, windows that are about to open and deadlines that are about to close, filtered to your level and country.</p>
+      <ul class="benefits">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>Only official sources</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>Bonus entry into the monthly award when you sign up</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>Unsubscribe in one click</span></li>
+      </ul>
+    </div>
+    <form class="card" data-ne-form data-subject="Scholarship alerts signup" data-bonus="newsletter" data-success="You're in. Your first alert arrives within two weeks.">
+      <div class="form-grid">
+        <div><label for="al-name">First name</label><input id="al-name" name="name" type="text" autocomplete="given-name" required></div>
+        <div><label for="al-email">Email</label><input id="al-email" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="al-level">Level</label><select id="al-level" name="level" required><option value="">Choose…</option><option>High school / secondary</option><option>Undergraduate</option><option>Master's</option><option>PhD</option><option>Vocational</option></select></div>
+        <div><label for="al-country">Citizenship</label><input id="al-country" name="citizenship" type="text" required></div>
+        <div class="full"><label for="al-field">Field of study <span class="hint" style="display:inline">(optional)</span></label><input id="al-field" name="field" type="text"></div>
+        <input type="hidden" name="list" value="Scholarship alerts">
+        <div class="full"><label class="check"><input type="checkbox" name="consent" value="yes" required><span>Email me scholarship alerts from Next.Education. I can unsubscribe any time.</span></label></div>
+        <div class="hp" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+        <div class="full"><button class="btn btn-ink btn-block" type="submit">Send me alerts</button></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><h2>Win more scholarships</h2><p>Three guides that change your odds.</p></div></div>
+    <div class="grid g3">
+      <a class="card card-link" href="guides/scholarship-strategy.html"><h3>A repeatable weekly scholarship system</h3><p class="muted">Where to look, how to track and how to reuse essays without sounding generic.</p></a>
+      <a class="card card-link" href="guides/scholarship-essay-guide.html"><h3>Write a scholarship essay that stands out</h3><p class="muted">Structure, specificity and an editing checklist.</p></a>
+      <a class="card card-link" href="guides/financial-aid-basics.html"><h3>Grants, loans and work-study basics</h3><p class="muted">How aid works in the US, Canada, UK, India and Australia.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap narrow faq">
+    <h2>Scholarship questions</h2>
+    <details><summary>What does "full funding" mean?</summary><p>Usually tuition plus a living allowance, and sometimes travel and visa costs. Each funder defines it differently, so read the official terms for what's covered.</p></details>
+    <details><summary>When should I apply?</summary><p>Many major international awards close 6 to 12 months before the program starts, and some open a year ahead. Start researching at least 12 to 18 months before you plan to begin.</p></details>
+    <details><summary>Can I apply for several scholarships at once?</summary><p>Usually yes, though some awards can't be combined. Applying widely, especially to smaller and local awards, is one of the most reliable ways to win something.</p></details>
+    <details><summary>Does Next.Education award its own scholarships?</summary><p>Yes. We run a monthly award and an essay prize funded by sponsors and reader donations. See <a href="contests.html">contests and prizes</a>.</p></details>
+  </div>
+</section>
+{% endraw %}
