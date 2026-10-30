@@ -1,0 +1,73 @@
+---
+layout: "default"
+full_title: "Student budget planner: monthly costs, income and funding gap | Next.Education"
+og_title: "Student budget planner: monthly costs, income and funding gap"
+description: "Plan a monthly student budget at home or abroad. Add tuition, rent, food and income to see your funding gap, emergency buffer and total over the program."
+canonical: "https://next.education/tools/budget-planner.html"
+robots: "index, follow, max-image-preview:large"
+og_type: "website"
+nav: "tools"
+root: "../"
+scripts: ["tools.js"]
+body_attrs: ""
+base: false
+---
+{% raw %}<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://next.education/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://next.education/tools.html"}, {"@type": "ListItem", "position": 3, "name": "Student budget planner: monthly costs, income and funding gap", "item": "https://next.education/tools/budget-planner.html"}]}</script>
+<header class="page-hero graph"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">/</span> <a href="../tools.html">Tools</a> <span aria-hidden="true">/</span> <span aria-current="page">Student budget planner</span></nav><h1>Student budget planner</h1><p class="lede">Add what comes in and what goes out each month. You'll see your monthly gap, the total over your whole program and the emergency buffer to aim for.</p></div></header>
+<section class="section-tight">
+  <div class="wrap tool-layout">
+    <form class="card" id="budget-form" onsubmit="return false" aria-label="Budget inputs">
+      <div class="form-grid">
+        <div><label for="currency">Currency</label><select id="currency"><option>USD</option><option>CAD</option><option>GBP</option><option>INR</option><option>AUD</option><option>EUR</option></select></div>
+        <div><label for="b-years">Program length (years)</label><input id="b-years" type="number" min="0.5" step="0.5" value="2"></div>
+        <h2 class="full" style="font-size:var(--step-1);margin:.5rem 0 0">Money in, per month</h2>
+        <div><label for="b-family">Family support</label><input id="b-family" type="number" min="0" step="50" value="600"></div>
+        <div><label for="b-work">Part-time work</label><input id="b-work" type="number" min="0" step="50" value="800"></div>
+        <div><label for="b-schol">Scholarship or stipend</label><input id="b-schol" type="number" min="0" step="50" value="0"></div>
+        <div><label for="b-other-in">Other income</label><input id="b-other-in" type="number" min="0" step="50" value="0"></div>
+        <h2 class="full" style="font-size:var(--step-1);margin:.5rem 0 0">Money out</h2>
+        <div class="full"><label for="b-tuition">Tuition and fees, per year</label><input id="b-tuition" type="number" min="0" step="500" value="12000"></div>
+        <div><label for="b-rent">Rent and utilities</label><input id="b-rent" type="number" min="0" step="25" value="900"></div>
+        <div><label for="b-food">Food</label><input id="b-food" type="number" min="0" step="25" value="350"></div>
+        <div><label for="b-transport">Transport</label><input id="b-transport" type="number" min="0" step="10" value="100"></div>
+        <div><label for="b-phone">Phone and internet</label><input id="b-phone" type="number" min="0" step="5" value="60"></div>
+        <div><label for="b-books">Books and supplies</label><input id="b-books" type="number" min="0" step="10" value="60"></div>
+        <div><label for="b-insurance">Health insurance</label><input id="b-insurance" type="number" min="0" step="10" value="80"></div>
+        <div><label for="b-personal">Personal and social</label><input id="b-personal" type="number" min="0" step="10" value="150"></div>
+        <div><label for="b-other-out">Other</label><input id="b-other-out" type="number" min="0" step="10" value="0"></div>
+      </div>
+    </form>
+    <div class="output" aria-live="polite" style="position:sticky;top:96px">
+      <h2 style="font-size:var(--step-1)">Monthly balance</h2>
+      <p class="big" id="b-gap">…</p>
+      <dl><dt>Money in</dt><dd id="b-in">…</dd><dt>Money out</dt><dd id="b-out">…</dd><dt>Emergency buffer to hold</dt><dd id="b-buffer">…</dd></dl>
+      <p style="margin-top:1rem;font-weight:700;color:#fff" id="b-total"></p>
+      <div class="bar-chart" id="b-chart" aria-label="Monthly costs by category"></div>
+      <div class="hero-ctas" style="margin-bottom:0"><a class="btn" href="../scholarships.html">Close the gap with scholarships</a></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="ad-slot" data-ad="display"></div></div>
+
+<section class="section section-alt">
+  <div class="wrap prose">
+    <h2>Building a budget that survives the first semester</h2>
+    <p>Most student budgets fail in the first two months, when deposits, textbooks, a laptop and setting up a home all land at once. Plan those one-off costs separately and hold an <strong>emergency buffer of about three months of expenses</strong>; the planner shows that figure for you.</p>
+    <h3>If you're studying abroad</h3>
+    <ul>
+      <li>Many countries require <strong>proof of funds</strong> for a student visa, often covering tuition plus a set amount of living costs. The official minimum changes, so check the immigration authority's site, and treat it as a floor, not a budget.</li>
+      <li>Work rules for international students vary by country and can change. Don't build a budget that only works if you can work more hours than your visa allows.</li>
+      <li>Currency moves can raise your costs mid-program. Add a margin of 10 percent or more if your income is in a different currency from your expenses.</li>
+    </ul>
+    <h3>Where students usually find savings</h3>
+    <ul>
+      <li>Shared housing, or living further out with a transit pass.</li>
+      <li>Second-hand or library textbooks and open textbooks such as OpenStax.</li>
+      <li>Student discounts on transport, software and phone plans.</li>
+      <li>Applying for small, local scholarships, which get fewer applicants.</li>
+    </ul>
+    <p>Read the full guide: <a href="../guides/study-abroad-costs.html">how to budget for studying abroad</a>.</p>
+  </div>
+</section>
+{% endraw %}
