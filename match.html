@@ -1,0 +1,212 @@
+---
+layout: "default"
+full_title: "Get matched with programs that fit you | Next.Education"
+og_title: "Get matched with programs that fit you"
+description: "Answer six quick questions about your goal, field, schedule and budget. Get a free shortlist of program types, scholarships to check and a step-by-step plan."
+canonical: "https://next.education/match.html"
+robots: "index, follow, max-image-preview:large"
+og_type: "website"
+nav: ""
+root: ""
+scripts: ["match.js"]
+body_attrs: "data-no-sticky data-no-exit"
+base: false
+---
+{% raw %}<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://next.education/"}, {"@type": "ListItem", "position": 2, "name": "Get matched with programs that fit you", "item": "https://next.education/match.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does the match work?", "acceptedAnswer": {"@type": "Answer", "text": "Your answers are compared against our program-path library and guides to build a starting plan: the route, the program types worth shortlisting, the tools to run your numbers and the funding sources to check. If you opt in, we can also introduce you to accredited providers that fit your answers."}}, {"@type": "Question", "name": "Will schools call me?", "acceptedAnswer": {"@type": "Answer", "text": "Only if you tick the partner-consent box on the final step. Without it, you'll only receive your report and any emails you asked for."}}, {"@type": "Question", "name": "Is the advising call a sales call?", "acceptedAnswer": {"@type": "Answer", "text": "No. Advisors help you think through options. If you'd like introductions to schools, you can ask for them; nobody will push you."}}, {"@type": "Question", "name": "Can I use this if I'm outside North America?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The match covers learners anywhere, with extra detail for the US, Canada, the UK, India and Australia."}}]}</script>
+<header class="page-hero graph"><div class="wrap"><h1>Get matched with programs that fit you</h1><p class="lede">Six questions, about a minute. You get a personal starting plan on screen and a full report by email. Free, and you choose who can contact you.</p></div></header>
+<section class="section-tight">
+  <div class="wrap wizard-shell">
+    <div>
+      <form class="wizard" id="match-form" data-subject="New program match lead" novalidate>
+        <div class="progress"><div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div><span class="progress-label" id="progress-label">Step 1 of 6</span></div>
+
+        <section class="step" data-auto>
+          <h2>What do you want to do next?</h2>
+          <p>Pick the closest fit. You can change it later.</p>
+          <div class="tiles" data-required="goal">
+            <label class="tile"><input type="radio" name="goal" value="degree" required><span>Earn a degree<small>Bachelor's, master's, doctorate</small></span></label>
+            <label class="tile"><input type="radio" name="goal" value="certificate"><span>Get a certificate<small>Months, not years</small></span></label>
+            <label class="tile"><input type="radio" name="goal" value="bootcamp"><span>Do a bootcamp<small>Intensive tech training</small></span></label>
+            <label class="tile"><input type="radio" name="goal" value="apprenticeship"><span>Start an apprenticeship<small>Get paid to train</small></span></label>
+            <label class="tile"><input type="radio" name="goal" value="abroad"><span>Study abroad<small>Any level, any country</small></span></label>
+            <label class="tile"><input type="radio" name="goal" value="career-change"><span>Change careers<small>Retrain while working</small></span></label>
+            <label class="tile"><input type="radio" name="goal" value="scholarship"><span>Find funding<small>Scholarships and aid</small></span></label>
+            <label class="tile"><input type="radio" name="goal" value="free"><span>Learn free first<small>Test an interest</small></span></label>
+            <p class="group-error small" style="color:var(--warn)" hidden>Choose one option to continue.</p>
+          </div>
+          <input type="hidden" name="route" value="">
+          <input type="hidden" name="who" value="">
+        </section>
+
+        <section class="step" data-auto>
+          <h2>Which field interests you most?</h2>
+          <p>Not sure yet is a fine answer. We'll include ways to explore.</p>
+          <div class="tiles" data-required="field">
+            <label class="tile"><input type="radio" name="field" value="Healthcare and nursing"><span>Healthcare and nursing</span></label>
+            <label class="tile"><input type="radio" name="field" value="Business and management"><span>Business and MBA</span></label>
+            <label class="tile"><input type="radio" name="field" value="Computer science and IT"><span>Computer science and IT</span></label>
+            <label class="tile"><input type="radio" name="field" value="Data and AI"><span>Data and AI</span></label>
+            <label class="tile"><input type="radio" name="field" value="Cybersecurity"><span>Cybersecurity</span></label>
+            <label class="tile"><input type="radio" name="field" value="Engineering"><span>Engineering</span></label>
+            <label class="tile"><input type="radio" name="field" value="Education and teaching"><span>Education and teaching</span></label>
+            <label class="tile"><input type="radio" name="field" value="Psychology and social work"><span>Psychology and social work</span></label>
+            <label class="tile"><input type="radio" name="field" value="Law and legal studies"><span>Law and legal</span></label>
+            <label class="tile"><input type="radio" name="field" value="Design and creative"><span>Design and creative</span></label>
+            <label class="tile"><input type="radio" name="field" value="Skilled trades"><span>Skilled trades</span></label>
+            <label class="tile"><input type="radio" name="field" value="Not sure yet"><span>Not sure yet</span></label>
+            <p class="group-error small" style="color:var(--warn)" hidden>Choose one option to continue.</p>
+          </div>
+        </section>
+
+        <section class="step">
+          <h2>How do you want to study?</h2>
+          <p>Format and pace narrow the list more than anything else.</p>
+          <div class="form-grid">
+            <div class="full">
+              <label for="m-level">Level you're aiming for</label>
+              <select id="m-level" name="level" required>
+                <option value="">Choose…</option><option>Short course or certificate</option><option>Diploma or associate degree</option><option>Bachelor's degree</option><option>Master's or MBA</option><option>Doctorate</option><option>Apprenticeship</option><option>Not sure yet</option>
+              </select>
+            </div>
+            <fieldset class="full" style="border:0;padding:0;margin:0">
+              <legend class="label">Format</legend>
+              <div class="tiles" data-required="format">
+                <label class="tile"><input type="radio" name="format" value="Online"><span>Online</span></label>
+                <label class="tile"><input type="radio" name="format" value="Hybrid"><span>Hybrid</span></label>
+                <label class="tile"><input type="radio" name="format" value="On campus"><span>On campus</span></label>
+                <label class="tile"><input type="radio" name="format" value="No preference"><span>No preference</span></label>
+                <p class="group-error small" style="color:var(--warn)" hidden>Choose a format.</p>
+              </div>
+            </fieldset>
+            <div class="full">
+              <label for="m-pace">Pace</label>
+              <select id="m-pace" name="pace" required><option value="">Choose…</option><option>Full-time</option><option>Part-time, while working</option><option>Flexible / self-paced</option></select>
+            </div>
+          </div>
+        </section>
+
+        <section class="step">
+          <h2>Where and when?</h2>
+          <p>Rules, costs and funding depend on where you live and where you study.</p>
+          <div class="form-grid">
+            <div>
+              <label for="m-country">Country you live in</label>
+              <select id="m-country" name="country" required>
+                <option value="">Choose…</option><option>United States</option><option>Canada</option><option>United Kingdom</option><option>India</option><option>Australia</option><option>Nigeria</option><option>Pakistan</option><option>Philippines</option><option>Bangladesh</option><option>Sri Lanka</option><option>Nepal</option><option>Kenya</option><option>Ghana</option><option>United Arab Emirates</option><option>Saudi Arabia</option><option>Germany</option><option>Ireland</option><option>New Zealand</option><option>Singapore</option><option>Malaysia</option><option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="m-dest">Where do you want to study?</label>
+              <select id="m-dest" name="destination" required>
+                <option value="">Choose…</option><option>In my own country</option><option>Online from home</option><option>Canada</option><option>United States</option><option>United Kingdom</option><option>Australia</option><option>Germany</option><option>Ireland</option><option>New Zealand</option><option>Netherlands</option><option>Anywhere / open</option>
+              </select>
+            </div>
+            <div class="full">
+              <label for="m-start">When do you want to start?</label>
+              <select id="m-start" name="start" required><option value="">Choose…</option><option>Within 3 months</option><option>3–6 months</option><option>6–12 months</option><option>More than a year</option><option>Just exploring</option></select>
+            </div>
+          </div>
+        </section>
+
+        <section class="step">
+          <h2>Budget and background</h2>
+          <p>Approximate is fine. This keeps out programs you'd never consider.</p>
+          <div class="form-grid">
+            <div>
+              <label for="m-budget">Tuition budget per year (USD)</label>
+              <select id="m-budget" name="budget" required><option value="">Choose…</option><option>Under $2,000 a year</option><option>$2,000–$10,000 a year</option><option>$10,000–$25,000 a year</option><option>$25,000–$50,000 a year</option><option>Over $50,000 a year</option><option>Not sure yet</option></select>
+            </div>
+            <div>
+              <label for="m-aid">Do you need scholarships or aid?</label>
+              <select id="m-aid" name="aid" required><option value="">Choose…</option><option>Yes</option><option>Maybe</option><option>No</option></select>
+            </div>
+            <div class="full">
+              <label for="m-edu">Highest education you've completed</label>
+              <select id="m-edu" name="education" required><option value="">Choose…</option><option>Still in high school / secondary</option><option>High school / secondary diploma</option><option>Some college or university</option><option>Diploma or associate degree</option><option>Bachelor's degree</option><option>Master's degree or higher</option></select>
+            </div>
+          </div>
+        </section>
+
+        <section class="step">
+          <h2>Where should we send your plan?</h2>
+          <p>We'll show your plan on the next screen and email the full report.</p>
+          <div class="form-grid">
+            <div><label for="m-first">First name</label><input id="m-first" name="first_name" type="text" autocomplete="given-name" required></div>
+            <div><label for="m-last">Last name</label><input id="m-last" name="last_name" type="text" autocomplete="family-name" required></div>
+            <div class="full"><label for="m-email">Email</label><input id="m-email" name="email" type="email" autocomplete="email" required></div>
+            <div><label for="m-phone">Phone <span class="hint" style="display:inline">(optional, for a callback)</span></label><input id="m-phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div><label for="m-time">Best time to reach you</label><select id="m-time" name="best_time"><option>Any time</option><option>Morning</option><option>Afternoon</option><option>Evening</option><option>Email only</option></select></div>
+            <div class="full"><label class="check"><input type="checkbox" name="report_consent" value="yes" required><span>Email me my match report from Next.Education. <em>(required)</em></span></label></div>
+            <div class="full"><label class="check"><input type="checkbox" name="partner_consent" value="yes"><span>Yes, Next.Education and accredited schools or training providers that match my request may contact me about programs by email, phone or text, including by automated means. Consent is not a condition of any purchase or enrolment, and I can withdraw it at any time.</span></label></div>
+            <div class="full"><label class="check"><input type="checkbox" name="newsletter" value="yes"><span>Send me the weekly Next.Education digest. Unsubscribe any time.</span></label></div>
+            <div class="hp" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+            <p class="consent full">By continuing you agree to our <a href="terms.html">terms</a> and <a href="privacy.html">privacy policy</a>. We never sell your personal information. Message and data rates may apply to texts.</p>
+          </div>
+        </section>
+
+        <div class="wizard-nav">
+          <button class="btn btn-ghost" type="button" id="wiz-back">Back</button>
+          <button class="btn btn-ink" type="button" id="wiz-next">Continue</button>
+          <button class="btn btn-lg" type="submit" id="wiz-submit" hidden>Show my plan</button>
+        </div>
+      </form>
+      <div class="wizard result-panel" id="match-result" aria-live="polite"></div>
+    </div>
+
+    <aside class="side-proof">
+      <div class="card">
+        <h2 style="font-size:var(--step-2)">What you get</h2>
+        <ul class="benefits">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>Program types that match your goal, level, format and budget</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>Scholarships and aid sources to check first</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>A five-step plan with the right tools and guides</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>Optional: introductions to accredited schools, only if you tick the box</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2 style="font-size:var(--step-1)">Your details, your call</h2>
+        <p class="muted small">We don't sell personal information. Schools only hear from you if you give consent on the last step, and you can withdraw it any time.</p>
+        <p class="small" style="margin:0"><a href="privacy.html">Read the privacy policy</a></p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section-alt" id="advising" aria-labelledby="adv-title">
+  <div class="wrap split">
+    <div>
+      <h2 id="adv-title">Book a free 20-minute advising call</h2>
+      <p>Talk through options with an education advisor: which route makes sense, how to compare schools, and how to approach funding. Calls are by video or phone, in English.</p>
+      <ul class="benefits">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>Free, with no obligation</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>We reply within two business days to schedule</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>Bring your shortlist, questions or just a hunch</span></li>
+      </ul>
+    </div>
+    <form class="card" data-ne-form data-subject="Advising call request" data-success="Request received. We'll email you within two business days with times to choose from.">
+      <div class="form-grid">
+        <div><label for="a-name">Full name</label><input id="a-name" name="name" type="text" autocomplete="name" required></div>
+        <div><label for="a-email">Email</label><input id="a-email" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="a-phone">Phone or WhatsApp</label><input id="a-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div><label for="a-tz">Your time zone or city</label><input id="a-tz" name="timezone" type="text" placeholder="e.g. Toronto, Delhi, London" required></div>
+        <div class="full"><label for="a-topic">What do you want to discuss?</label>
+          <select id="a-topic" name="topic" required><option value="">Choose…</option><option>Choosing a program or route</option><option>Comparing schools I've shortlisted</option><option>Studying abroad</option><option>Scholarships and funding</option><option>Changing careers</option><option>Something else</option></select></div>
+        <div class="full"><label for="a-msg">Anything we should know? <span class="hint" style="display:inline">(optional)</span></label><textarea id="a-msg" name="message" rows="4"></textarea></div>
+        <div class="full"><label class="check"><input type="checkbox" name="consent" value="yes" required><span>I agree that Next.Education may contact me to schedule this call.</span></label></div>
+        <div class="hp" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+        <div class="full"><button class="btn btn-ink btn-block" type="submit">Request my free call</button></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow faq">
+    <h2>About the match</h2>
+    <details><summary>How does the match work?</summary><p>Your answers are compared against our program-path library and guides to build a starting plan: the route, the program types worth shortlisting, the tools to run your numbers and the funding sources to check. If you opt in, we can also introduce you to accredited providers that fit your answers.</p></details>
+    <details><summary>Will schools call me?</summary><p>Only if you tick the partner-consent box on the final step. Without it, you'll only receive your report and any emails you asked for.</p></details>
+    <details><summary>Is the advising call a sales call?</summary><p>No. Advisors help you think through options. If you'd like introductions to schools, you can ask for them; nobody will push you.</p></details>
+    <details><summary>Can I use this if I'm outside North America?</summary><p>Yes. The match covers learners anywhere, with extra detail for the US, Canada, the UK, India and Australia.</p></details>
+  </div>
+</section>
+{% endraw %}
