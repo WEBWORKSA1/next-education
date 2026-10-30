@@ -1,0 +1,68 @@
+---
+layout: "default"
+full_title: "Program comparer: compare up to three programs side by side | Next.Education"
+og_title: "Program comparer: compare up to three programs side by side"
+description: "Compare up to three degree, certificate or bootcamp programs on total cost, length, format, accreditation and graduate outcomes, with a weighted overall lean."
+canonical: "https://next.education/tools/compare.html"
+robots: "index, follow, max-image-preview:large"
+og_type: "website"
+nav: "tools"
+root: "../"
+scripts: ["tools.js"]
+body_attrs: ""
+base: false
+---
+{% raw %}<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://next.education/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://next.education/tools.html"}, {"@type": "ListItem", "position": 3, "name": "Program comparer: compare up to three programs side by side", "item": "https://next.education/tools/compare.html"}]}</script>
+<header class="page-hero graph"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">/</span> <a href="../tools.html">Tools</a> <span aria-hidden="true">/</span> <span aria-current="page">Program comparer</span></nav><h1>Program comparer</h1><p class="lede">Enter two or three programs you're considering. We'll show the cheapest, the fastest, the best on outcomes and a weighted overall lean, and flag anything with unconfirmed accreditation.</p></div></header>
+<section class="section-tight">
+  <div class="wrap">
+    <form id="compare-form" onsubmit="return false" aria-label="Programs to compare">
+      <div class="grid g3">
+        <fieldset class="card" style="margin:0"><legend class="label">Program 1</legend>
+          <label for="c-name0">Name</label><input id="c-name0" name="name0" type="text" value="State university, campus">
+          <label for="c-cost0" style="margin-top:.7rem">Total cost (USD)</label><input id="c-cost0" name="cost0" type="number" min="0" step="500" value="42000">
+          <label for="c-months0" style="margin-top:.7rem">Length (months)</label><input id="c-months0" name="months0" type="number" min="1" step="1" value="24">
+          <label for="c-fmt0" style="margin-top:.7rem">Format</label><select id="c-fmt0" name="fmt0"><option>On campus</option><option>Online</option><option>Hybrid</option></select>
+          <label for="c-acc0" style="margin-top:.7rem">Accreditation confirmed?</label><select id="c-acc0" name="acc0"><option>Yes</option><option>Not sure</option><option>No</option></select>
+          <label for="c-out0" style="margin-top:.7rem">Grads employed in field (%)<span class="hint">From the school's own report</span></label><input id="c-out0" name="outcome0" type="number" min="0" max="100" value="78">
+        </fieldset>
+        <fieldset class="card" style="margin:0"><legend class="label">Program 2</legend>
+          <label for="c-name1">Name</label><input id="c-name1" name="name1" type="text" value="Online university">
+          <label for="c-cost1" style="margin-top:.7rem">Total cost (USD)</label><input id="c-cost1" name="cost1" type="number" min="0" step="500" value="24000">
+          <label for="c-months1" style="margin-top:.7rem">Length (months)</label><input id="c-months1" name="months1" type="number" min="1" step="1" value="20">
+          <label for="c-fmt1" style="margin-top:.7rem">Format</label><select id="c-fmt1" name="fmt1"><option>Online</option><option>On campus</option><option>Hybrid</option></select>
+          <label for="c-acc1" style="margin-top:.7rem">Accreditation confirmed?</label><select id="c-acc1" name="acc1"><option>Yes</option><option>Not sure</option><option>No</option></select>
+          <label for="c-out1" style="margin-top:.7rem">Grads employed in field (%)</label><input id="c-out1" name="outcome1" type="number" min="0" max="100" value="70">
+        </fieldset>
+        <fieldset class="card" style="margin:0"><legend class="label">Program 3 <span class="hint" style="display:inline">(optional)</span></legend>
+          <label for="c-name2">Name</label><input id="c-name2" name="name2" type="text" placeholder="e.g. Bootcamp">
+          <label for="c-cost2" style="margin-top:.7rem">Total cost (USD)</label><input id="c-cost2" name="cost2" type="number" min="0" step="500">
+          <label for="c-months2" style="margin-top:.7rem">Length (months)</label><input id="c-months2" name="months2" type="number" min="1" step="1">
+          <label for="c-fmt2" style="margin-top:.7rem">Format</label><select id="c-fmt2" name="fmt2"><option>Online</option><option>On campus</option><option>Hybrid</option></select>
+          <label for="c-acc2" style="margin-top:.7rem">Accreditation confirmed?</label><select id="c-acc2" name="acc2"><option>Not sure</option><option>Yes</option><option>No</option></select>
+          <label for="c-out2" style="margin-top:.7rem">Grads employed in field (%)</label><input id="c-out2" name="outcome2" type="number" min="0" max="100">
+        </fieldset>
+      </div>
+    </form>
+    <div class="output" id="c-out" aria-live="polite" style="margin-top:1.25rem"></div>
+  </div>
+</section>
+
+<div class="wrap"><div class="ad-slot" data-ad="display"></div></div>
+
+<section class="section section-alt">
+  <div class="wrap prose">
+    <h2>What to compare, and what to ignore</h2>
+    <p>The overall lean weights <strong>outcomes at 40%</strong>, <strong>cost at 30%</strong> and <strong>time at 20%</strong>, and subtracts heavily when accreditation isn't confirmed. Those weights reflect what usually matters most to a career decision, but your situation may differ, so read the individual winners too.</p>
+    <h3>Questions that separate good programs from expensive ones</h3>
+    <ul class="checklist">
+      <li>Is the school accredited or recognised by the body that matters for your country and profession?</li>
+      <li>How is "employed in field" defined, over what period, and what share of graduates responded?</li>
+      <li>What is the total cost including fees, materials, travel and income you'll give up?</li>
+      <li>Will credits transfer if you need to switch schools?</li>
+      <li>What support do online students actually get: advising, career services, tutoring?</li>
+    </ul>
+    <p>Ignore rankings that don't explain their method, "limited-time" discounts that push you to sign quickly and salary figures without a source. More in <a href="../guides/online-degree-checklist.html">our 12-point online degree checklist</a>.</p>
+  </div>
+</section>
+{% endraw %}

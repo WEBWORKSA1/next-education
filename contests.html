@@ -1,0 +1,146 @@
+---
+layout: "default"
+full_title: "Student contests and prizes: essay prize and monthly award | Next.Education"
+og_title: "Student contests and prizes: essay prize and monthly award"
+description: "Enter the Next Step Essay Prize and the no-essay monthly award. Free to enter, judged fairly, with cash prizes for students and adult learners."
+canonical: "https://next.education/contests.html"
+robots: "index, follow, max-image-preview:large"
+og_type: "website"
+nav: "contests"
+root: ""
+scripts: ["contests.js"]
+body_attrs: "data-no-exit"
+base: false
+---
+{% raw %}<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://next.education/"}, {"@type": "ListItem", "position": 2, "name": "Student contests and prizes: essay prize and monthly award", "item": "https://next.education/contests.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does it cost anything to enter?", "acceptedAnswer": {"@type": "Answer", "text": "No. Both contests are free, and no purchase or donation ever improves your chances."}}, {"@type": "Question", "name": "Who can enter?", "acceptedAnswer": {"@type": "Answer", "text": "People aged 16 and older (with guardian consent where needed) in the countries listed in the official rules. Employees of Next.Education and sponsors, and their households, can't enter."}}, {"@type": "Question", "name": "How is the prize paid?", "acceptedAnswer": {"@type": "Answer", "text": "By bank transfer or another method we agree with the winner, after eligibility checks. Winners in Canada must correctly answer a skill-testing question."}}, {"@type": "Question", "name": "Can I use AI to write my essay?", "acceptedAnswer": {"@type": "Answer", "text": "No. Spelling and grammar checks are fine, but the ideas and writing must be yours. Judges may ask finalists follow-up questions."}}]}</script>
+<header class="page-hero graph"><div class="wrap"><h1>Contests and prizes</h1><p class="lede">Two ways to win money toward your next step. A judged essay prize each season, and a no-essay award every month. Both are free to enter.</p></div></header>
+<section class="section band-yellow" aria-labelledby="essay-title">
+  <div class="wrap split">
+    <div>
+      <p class="tag tag-ad" id="essay-state" style="background:#14213D;color:#FFD166;border-color:#14213D">Opening soon</p>
+      <h2 id="essay-title" style="margin-top:.75rem"><span data-c="essay-name">The Next Step Essay Prize</span>, <span data-c="essay-season">Season 1</span></h2>
+      <p style="font-size:var(--step-1)"><strong>The prompt:</strong> What is your next step in education, and what will it make possible for you or for others?</p>
+      <p>600 words maximum. Judged on substance, not polish. Open to students and adult learners at any level.</p>
+      <dl class="grid g3" style="margin:1.25rem 0 0">
+        <div><dt class="small">Entries open</dt><dd style="margin:0;font-weight:700" data-c="essay-opens">December 1, 2026</dd></div>
+        <div><dt class="small">Entries close</dt><dd style="margin:0;font-weight:700" data-c="essay-closes">February 28, 2027</dd></div>
+        <div><dt class="small">Winners announced by</dt><dd style="margin:0;font-weight:700" data-c="essay-winners">April 15, 2027</dd></div>
+      </dl>
+    </div>
+    <div class="grid g3">
+      <div class="prize first"><span>Grand prize</span><b data-c="essay-first">$500</b></div>
+      <div class="prize"><span>Runner-up</span><b data-c="essay-second">$250</b></div>
+      <div class="prize"><span>Third place</span><b data-c="essay-third">$100</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wizard-shell">
+    <div>
+      <div class="wizard" id="essay-interest">
+        <h2 style="font-size:var(--step-3)">Get notified when entries open</h2>
+        <p class="muted">We'll email you the day the window opens, plus three tips from our essay guide.</p>
+        <form data-ne-form data-subject="Essay prize: notify me" data-bonus="newsletter" data-success="Done. You'll hear from us the day entries open.">
+          <div class="form-grid">
+            <div><label for="ei-name">First name</label><input id="ei-name" name="name" type="text" autocomplete="given-name" required></div>
+            <div><label for="ei-email">Email</label><input id="ei-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="full"><label for="ei-country">Country</label><input id="ei-country" name="country" type="text" autocomplete="country-name" required></div>
+            <div class="hp" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+            <div class="full"><button class="btn btn-ink btn-lg btn-block" type="submit">Notify me</button></div>
+          </div>
+        </form>
+      </div>
+
+      <div class="wizard" id="essay-entry" hidden>
+        <h2 style="font-size:var(--step-3)">Submit your essay</h2>
+        <form data-ne-form data-subject="Essay prize entry" data-success="Your entry is in. You'll get a confirmation email, and we'll contact finalists by email.">
+          <div class="form-grid">
+            <div><label for="e-name">Full name</label><input id="e-name" name="name" type="text" autocomplete="name" required></div>
+            <div><label for="e-email">Email</label><input id="e-email" name="email" type="email" autocomplete="email" required></div>
+            <div><label for="e-country">Country of residence</label><input id="e-country" name="country" type="text" autocomplete="country-name" required></div>
+            <div><label for="e-level">Current or planned level</label><select id="e-level" name="level" required><option value="">Choose…</option><option>High school / secondary</option><option>College / undergraduate</option><option>Graduate</option><option>Adult learner / career changer</option><option>Vocational / apprenticeship</option></select></div>
+            <div class="full"><label for="e-title">Essay title</label><input id="e-title" name="essay_title" type="text" required></div>
+            <div class="full"><label for="e-essay">Your essay <span class="hint" id="e-wc" style="display:inline">0 / 600 words</span></label><textarea id="e-essay" name="essay" rows="14" required></textarea></div>
+            <div class="full"><label class="check"><input type="checkbox" name="age" value="yes" required><span>I am 16 or older. If I'm under the age of majority where I live, a parent or guardian has agreed to my entry.</span></label></div>
+            <div class="full"><label class="check"><input type="checkbox" name="original" value="yes" required><span>This essay is my own original work. I used no more AI help than spelling and grammar checks.</span></label></div>
+            <div class="full"><label class="check"><input type="checkbox" name="rules" value="yes" required><span>I have read and agree to the <a href="contest-rules.html">official rules</a>.</span></label></div>
+            <div class="hp" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+            <div class="full"><button class="btn btn-lg btn-block" type="submit">Submit my essay</button></div>
+          </div>
+        </form>
+      </div>
+      <div class="wizard" id="essay-closed" hidden><h2>Entries for this season are closed</h2><p>Winners will be announced on this page. Sign up for the newsletter to hear when the next season opens.</p></div>
+    </div>
+    <aside class="side-proof">
+      <div class="card">
+        <h2 style="font-size:var(--step-2)">How essays are judged</h2>
+        <div class="alloc">
+          <div class="alloc-row"><span>Clarity of purpose</span><span>25%</span><span class="bar" style="--c:var(--r-degree)"><i style="width:100%"></i></span></div>
+          <div class="alloc-row"><span>Specific detail and evidence</span><span>25%</span><span class="bar" style="--c:var(--r-cert)"><i style="width:100%"></i></span></div>
+          <div class="alloc-row"><span>Originality of voice</span><span>25%</span><span class="bar" style="--c:var(--r-boot)"><i style="width:100%"></i></span></div>
+          <div class="alloc-row"><span>Reflection and realism</span><span>25%</span><span class="bar" style="--c:var(--r-abroad)"><i style="width:100%"></i></span></div>
+        </div>
+        <p class="small muted" style="margin:1rem 0 0">At least two judges score each finalist independently. Read <a href="guides/scholarship-essay-guide.html">how to write an essay that stands out</a>.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<div class="wrap"><div class="ad-slot" data-ad="display"></div></div>
+
+<section class="section section-alt" id="monthly">
+  <div class="wrap wizard-shell">
+    <form class="wizard" data-ne-form data-subject="Monthly award entry" data-success="You're entered for this month's award. Good luck. We'll email the winner within ten days of month end.">
+      <h2 style="font-size:var(--step-3)"><span data-c="monthly-name">Next Step Monthly Award</span>: <span data-c="monthly-amount">$250</span></h2>
+      <p class="muted">No essay. One entry per person per month for <strong id="month-label">this month</strong>. One winner is drawn at random from eligible entries.</p>
+      <input type="hidden" name="bonus_entries" id="m-bonus">
+      <div class="form-grid">
+        <div><label for="m-name">Full name</label><input id="m-name" name="name" type="text" autocomplete="name" required></div>
+        <div><label for="m-email">Email</label><input id="m-email" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="m-country">Country of residence</label><select id="m-country" name="country" required><option value="">Choose…</option><option>United States</option><option>Canada (excluding Quebec)</option><option>United Kingdom</option><option>Ireland</option><option>Australia</option><option>New Zealand</option><option>India</option></select></div>
+        <div><label for="m-level">Level of study</label><select id="m-level" name="level" required><option value="">Choose…</option><option>High school / secondary</option><option>Undergraduate</option><option>Graduate</option><option>Adult learner</option><option>Vocational</option><option>Planning to start</option></select></div>
+        <div class="full"><label for="m-next">In one sentence, what's your next step? <span class="hint" style="display:inline">(optional)</span></label><input id="m-next" name="next_step" type="text" maxlength="200"></div>
+        <div class="full"><label class="check"><input type="checkbox" name="age" value="yes" required><span>I am 16 or older, and a parent or guardian agrees if I'm under the age of majority.</span></label></div>
+        <div class="full"><label class="check"><input type="checkbox" name="rules" value="yes" required><span>I agree to the <a href="contest-rules.html">official rules</a>. No purchase necessary.</span></label></div>
+        <div class="full"><label class="check"><input type="checkbox" name="newsletter" value="yes"><span>Also send me scholarship alerts (optional, not required to enter).</span></label></div>
+        <div class="hp" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+        <div class="full"><button class="btn btn-lg btn-block" type="submit">Enter this month's award</button></div>
+      </div>
+    </form>
+    <aside class="side-proof">
+      <div class="card">
+        <h2 style="font-size:var(--step-2)">Bonus entries</h2>
+        <p class="muted small">You start with 1 entry. Using the site's free tools earns more, on this device.</p>
+        <ul id="bonus-list" style="list-style:none;padding:0;margin:0;display:grid;gap:.6rem"></ul>
+        <p style="margin:1rem 0 0;font-weight:700">Your entries this month: <span id="bonus-total">1</span></p>
+        <p class="small muted" style="margin:.5rem 0 0">Bonus entries never require a purchase. You can also <a href="contest-rules.html#free-entry">request a free bonus entry</a> without using any tool.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><h2>Winners</h2><p>Season and monthly winners will be listed here with their permission.</p></div></div>
+    <div class="empty"><p><strong>The first winners will appear here after Season 1 is judged.</strong></p><p>Want your name on this page? <a href="#essay-title">Enter the essay prize</a> or <a href="#monthly">this month's award</a>.</p></div>
+  </div>
+</section>
+
+<section class="section band-ink" id="sponsor">
+  <div class="wrap split">
+    <div><h2>Sponsor a prize</h2><p>Put your organisation's name on a student award: a named monthly award, a season prize or a category prize. Sponsors get recognition on the contest page, winner announcements and the newsletter.</p></div>
+    <div class="hero-ctas"><a class="btn btn-lg" href="advertise.html#sponsor-a-prize">Become a prize sponsor</a><a class="btn btn-ghost btn-lg" style="color:#fff;border-color:#3A4D78" href="donate.html">Donate to the prize pool</a></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow faq">
+    <h2>Contest questions</h2>
+    <details><summary>Does it cost anything to enter?</summary><p>No. Both contests are free, and no purchase or donation ever improves your chances.</p></details>
+    <details><summary>Who can enter?</summary><p>People aged 16 and older (with guardian consent where needed) in the countries listed in the <a href="contest-rules.html">official rules</a>. Employees of Next.Education and sponsors, and their households, can't enter.</p></details>
+    <details><summary>How is the prize paid?</summary><p>By bank transfer or another method we agree with the winner, after eligibility checks. Winners in Canada must correctly answer a skill-testing question.</p></details>
+    <details><summary>Can I use AI to write my essay?</summary><p>No. Spelling and grammar checks are fine, but the ideas and writing must be yours. Judges may ask finalists follow-up questions.</p></details>
+  </div>
+</section>
+{% endraw %}
