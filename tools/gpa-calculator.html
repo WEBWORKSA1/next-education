@@ -1,0 +1,55 @@
+---
+layout: "default"
+full_title: "GPA calculator: weighted and unweighted 4.0 scale | Next.Education"
+og_title: "GPA calculator: weighted and unweighted 4.0 scale"
+description: "Calculate your weighted or unweighted GPA on a 4.0 scale by course credits, and work out the grades you need to reach a target GPA."
+canonical: "https://next.education/tools/gpa-calculator.html"
+robots: "index, follow, max-image-preview:large"
+og_type: "website"
+nav: "tools"
+root: "../"
+scripts: ["tools.js"]
+body_attrs: ""
+base: false
+---
+{% raw %}<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://next.education/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://next.education/tools.html"}, {"@type": "ListItem", "position": 3, "name": "GPA calculator: weighted and unweighted 4.0 scale", "item": "https://next.education/tools/gpa-calculator.html"}]}</script>
+<header class="page-hero graph"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">/</span> <a href="../tools.html">Tools</a> <span aria-hidden="true">/</span> <span aria-current="page">GPA calculator</span></nav><h1>GPA calculator</h1><p class="lede">Add your courses, credits and letter grades for an unweighted and weighted GPA on the 4.0 scale. Then use the target helper to see what you need from here.</p></div></header>
+<section class="section-tight">
+  <div class="wrap tool-layout">
+    <form class="card" id="gpa-form" onsubmit="return false" aria-label="GPA inputs">
+      <div class="gpa-row" aria-hidden="true" style="font-weight:700;font-size:.9rem"><span>Course</span><span>Credits</span><span>Grade</span><span></span></div>
+      <div id="gpa-rows"></div>
+      <div style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap;margin-top:.75rem">
+        <button class="btn btn-ghost btn-sm" type="button" id="g-add">Add a course</button>
+        <label class="check" style="margin:0"><input type="checkbox" id="g-weighted"><span>Weighted (honours, AP, IB)</span></label>
+      </div>
+      <hr style="border:0;border-top:1px solid var(--border);margin:1.5rem 0">
+      <h2 style="font-size:var(--step-1)">Target GPA helper</h2>
+      <div class="form-grid">
+        <div><label for="g-cur">Current cumulative GPA</label><input id="g-cur" type="number" min="0" max="4" step="0.01" value="3.1"></div>
+        <div><label for="g-cur-cr">Credits completed</label><input id="g-cur-cr" type="number" min="0" step="1" value="45"></div>
+        <div><label for="g-target">Target GPA</label><input id="g-target" type="number" min="0" max="4" step="0.01" value="3.4"></div>
+        <div><label for="g-rem">Credits remaining</label><input id="g-rem" type="number" min="0" step="1" value="30"></div>
+      </div>
+    </form>
+    <div class="output" aria-live="polite">
+      <h2 style="font-size:var(--step-1)">Your GPA</h2>
+      <p class="big" id="g-result">…</p>
+      <dl><dt>Weighted GPA</dt><dd id="g-weighted-out">…</dd><dt>Credits counted</dt><dd id="g-credits">…</dd><dt>To reach your target</dt><dd id="g-need" style="max-width:22ch">…</dd></dl>
+      <p class="small" style="margin-top:1rem">Scale: A/A+ 4.0, A− 3.7, B+ 3.3, B 3.0, B− 2.7, C+ 2.3, C 2.0, C− 1.7, D+ 1.3, D 1.0, D− 0.7, F 0.</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="ad-slot" data-ad="display"></div></div>
+
+<section class="section section-alt">
+  <div class="wrap prose">
+    <h2>How GPA is calculated</h2>
+    <p>Each letter grade converts to grade points. Multiply each course's points by its credits, add those up, and divide by total credits. That's your <strong>unweighted GPA</strong>. A <strong>weighted GPA</strong> adds a bonus for harder courses, commonly 0.5 for honours and 1.0 for AP, IB or dual-credit courses, so it can go above 4.0.</p>
+    <h3>Schools and countries differ</h3>
+    <p>Not every school uses this scale. Some award 4.3 for an A+, some weight differently, and many countries don't use GPA at all: Canada often uses percentages or a 4.3 or 9-point scale, the UK uses degree classifications, and India commonly uses percentages or a 10-point CGPA. When applying abroad, follow each university's own conversion instructions, or use a credential-evaluation service if they require one.</p>
+    <aside class="callout"><p><strong>Tip for applications:</strong> report your GPA exactly as your transcript shows it, and let the admissions office convert it. Self-converted grades can cause problems.</p></aside>
+  </div>
+</section>
+{% endraw %}
