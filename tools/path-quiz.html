@@ -1,0 +1,102 @@
+---
+layout: "default"
+full_title: "Which education route fits me? Free 7-question quiz | Next.Education"
+og_title: "Which education route fits me? Free 7-question quiz"
+description: "Seven questions about your goal, time, budget and learning style point you to a degree, certificate, bootcamp, apprenticeship, study abroad or free-first path."
+canonical: "https://next.education/tools/path-quiz.html"
+robots: "index, follow, max-image-preview:large"
+og_type: "website"
+nav: "tools"
+root: "../"
+scripts: ["tools.js"]
+body_attrs: "data-no-exit"
+base: false
+---
+{% raw %}<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://next.education/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://next.education/tools.html"}, {"@type": "ListItem", "position": 3, "name": "Which education route fits me? Free 7-question quiz", "item": "https://next.education/tools/path-quiz.html"}]}</script>
+<header class="page-hero graph"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">/</span> <a href="../tools.html">Tools</a> <span aria-hidden="true">/</span> <span aria-current="page">Which route fits me?</span></nav><h1>Which route fits me?</h1><p class="lede">Seven quick questions about your goal, time, money and how you learn. You'll get your best-fit route, a runner-up, and the next step for each.</p></div></header>
+<section class="section-tight">
+  <div class="wrap" style="max-width:820px">
+    <form class="wizard" id="quiz-form" onsubmit="return false" aria-label="Route quiz">
+      <div class="progress"><div class="progress-track"><div class="progress-fill" id="q-fill"></div></div><span class="progress-label" id="q-label">Question 1 of 7</span></div>
+
+      <fieldset class="step active" style="border:0;padding:0;margin:0"><legend><h2>What's your main goal right now?</h2></legend>
+        <div class="tiles">
+          <label class="tile"><input type="radio" name="q1" data-w="degree:3,apprenticeship:1"><span>A specific licensed career<small>Nurse, engineer, teacher, lawyer</small></span></label>
+          <label class="tile"><input type="radio" name="q1" data-w="certificate:3,bootcamp:1"><span>A better job in my field, fast</span></label>
+          <label class="tile"><input type="radio" name="q1" data-w="bootcamp:3,certificate:2"><span>Switch into tech</span></label>
+          <label class="tile"><input type="radio" name="q1" data-w="abroad:3,degree:1"><span>Live and work internationally</span></label>
+          <label class="tile"><input type="radio" name="q1" data-w="free:3"><span>Figure out what I enjoy</span></label>
+        </div><p class="group-error small" style="color:var(--warn)" hidden>Choose an answer to continue.</p></fieldset>
+
+      <fieldset class="step" style="border:0;padding:0;margin:0"><legend><h2>How long can you study before you need to earn more?</h2></legend>
+        <div class="tiles">
+          <label class="tile"><input type="radio" name="q2" data-w="certificate:2,bootcamp:2,free:1"><span>Under 6 months</span></label>
+          <label class="tile"><input type="radio" name="q2" data-w="certificate:2,bootcamp:1,apprenticeship:1"><span>6 to 18 months</span></label>
+          <label class="tile"><input type="radio" name="q2" data-w="degree:3,abroad:1,apprenticeship:1"><span>2 to 4 years</span></label>
+          <label class="tile"><input type="radio" name="q2" data-w="apprenticeship:3,certificate:1,free:1"><span>I need to earn while I learn</span></label>
+        </div><p class="group-error small" style="color:var(--warn)" hidden>Choose an answer to continue.</p></fieldset>
+
+      <fieldset class="step" style="border:0;padding:0;margin:0"><legend><h2>What can you spend, all in?</h2></legend>
+        <div class="tiles">
+          <label class="tile"><input type="radio" name="q3" data-w="free:3,apprenticeship:2"><span>Very little</span></label>
+          <label class="tile"><input type="radio" name="q3" data-w="certificate:2,free:1"><span>A few thousand</span></label>
+          <label class="tile"><input type="radio" name="q3" data-w="bootcamp:1,degree:2,abroad:1"><span>Tens of thousands</span></label>
+          <label class="tile"><input type="radio" name="q3" data-w="degree:2,abroad:2"><span>A big investment with loans or scholarships</span></label>
+        </div><p class="group-error small" style="color:var(--warn)" hidden>Choose an answer to continue.</p></fieldset>
+
+      <fieldset class="step" style="border:0;padding:0;margin:0"><legend><h2>How do you learn best?</h2></legend>
+        <div class="tiles">
+          <label class="tile"><input type="radio" name="q4" data-w="apprenticeship:3,bootcamp:1"><span>Hands-on, doing real work</span></label>
+          <label class="tile"><input type="radio" name="q4" data-w="degree:2,certificate:1"><span>Structured classes with deadlines</span></label>
+          <label class="tile"><input type="radio" name="q4" data-w="bootcamp:3"><span>Intensive sprints</span></label>
+          <label class="tile"><input type="radio" name="q4" data-w="free:2,certificate:2"><span>At my own pace, online</span></label>
+        </div><p class="group-error small" style="color:var(--warn)" hidden>Choose an answer to continue.</p></fieldset>
+
+      <fieldset class="step" style="border:0;padding:0;margin:0"><legend><h2>Do you already have a degree?</h2></legend>
+        <div class="tiles">
+          <label class="tile"><input type="radio" name="q5" data-w="degree:2,apprenticeship:1"><span>No</span></label>
+          <label class="tile"><input type="radio" name="q5" data-w="certificate:2,degree:1"><span>Yes, in a related field</span></label>
+          <label class="tile"><input type="radio" name="q5" data-w="bootcamp:2,certificate:1,degree:1"><span>Yes, in an unrelated field</span></label>
+          <label class="tile"><input type="radio" name="q5" data-w="degree:2,abroad:1,free:1"><span>I'm still in school</span></label>
+        </div><p class="group-error small" style="color:var(--warn)" hidden>Choose an answer to continue.</p></fieldset>
+
+      <fieldset class="step" style="border:0;padding:0;margin:0"><legend><h2>How sure are you about the field?</h2></legend>
+        <div class="tiles">
+          <label class="tile"><input type="radio" name="q6" data-w="degree:2,apprenticeship:1,abroad:1"><span>Certain</span></label>
+          <label class="tile"><input type="radio" name="q6" data-w="certificate:2,bootcamp:1"><span>Fairly sure</span></label>
+          <label class="tile"><input type="radio" name="q6" data-w="free:3"><span>Curious but unsure</span></label>
+        </div><p class="group-error small" style="color:var(--warn)" hidden>Choose an answer to continue.</p></fieldset>
+
+      <fieldset class="step" style="border:0;padding:0;margin:0"><legend><h2>Are you open to moving countries?</h2></legend>
+        <div class="tiles">
+          <label class="tile"><input type="radio" name="q7" data-w="abroad:4"><span>Yes, I want to</span></label>
+          <label class="tile"><input type="radio" name="q7" data-w="degree:1"><span>Maybe later</span></label>
+          <label class="tile"><input type="radio" name="q7" data-w="certificate:1,apprenticeship:1"><span>No</span></label>
+        </div><p class="group-error small" style="color:var(--warn)" hidden>Choose an answer to continue.</p></fieldset>
+
+      <div class="wizard-nav"><button class="btn btn-ghost" type="button" id="q-back">Back</button><button class="btn btn-ink" type="button" id="q-next">Next</button></div>
+    </form>
+    <div class="wizard result-panel" id="quiz-result" aria-live="polite"></div>
+  </div>
+</section>
+
+<div class="wrap"><div class="ad-slot" data-ad="display"></div></div>
+
+<section class="section section-alt">
+  <div class="wrap prose">
+    <h2>How the quiz scores you</h2>
+    <p>Each answer adds points to one or more of six routes: degree, certificate, bootcamp, apprenticeship, study abroad and free-first. Your goal and your time horizon carry the most weight, because they decide which credentials can get you there. Budget and learning style then separate close calls.</p>
+    <p>The result is a starting point, not a verdict. If your top two routes are close, compare them on real numbers with the <a href="../tools/compare.html">program comparer</a> and the <a href="../tools/roi-calculator.html">ROI calculator</a>.</p>
+    <h3>The six routes in one line each</h3>
+    <ul>
+      <li><strong>Degree:</strong> the gate for licensed professions and research careers, and the widest set of options.</li>
+      <li><strong>Certificate:</strong> one job-ready skill set in months, often stackable into a larger qualification.</li>
+      <li><strong>Bootcamp:</strong> an intensive switch into tech roles, worth it only with credible outcomes.</li>
+      <li><strong>Apprenticeship:</strong> paid on-the-job training toward a recognised trade.</li>
+      <li><strong>Study abroad:</strong> a qualification plus an international network, with visas and costs to plan.</li>
+      <li><strong>Free-first:</strong> test an interest with open courses before you spend money.</li>
+    </ul>
+    <p>Want the long version? Read <a href="../guides/how-to-choose-your-next-education-step.html">how to choose your next education step</a>.</p>
+  </div>
+</section>
+{% endraw %}

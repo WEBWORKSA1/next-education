@@ -1,0 +1,73 @@
+---
+layout: "default"
+full_title: "Program explorer: compare 40+ education paths | Next.Education"
+og_title: "Program explorer: compare 40+ education paths"
+description: "Compare 40+ program paths in nursing, business, tech, data, cybersecurity, trades, teaching and more by route, time, cost band, format and demand."
+canonical: "https://next.education/programs.html"
+robots: "index, follow, max-image-preview:large"
+og_type: "website"
+nav: "programs"
+root: ""
+scripts: ["programs.js"]
+body_attrs: ""
+base: false
+---
+{% raw %}<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://next.education/"}, {"@type": "ListItem", "position": 2, "name": "Program explorer: compare 40+ education paths", "item": "https://next.education/programs.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Are these real schools?", "acceptedAnswer": {"@type": "Answer", "text": "The explorer compares program types (paths), not individual schools, so you can decide on a route first. When you click \"Find programs\", we match you with accredited options for that path."}}, {"@type": "Question", "name": "What does \"Featured program slot\" mean?", "acceptedAnswer": {"@type": "Answer", "text": "It's a paid placement that schools can buy to show their program to people browsing a field. Featured listings are always labelled and never change our editorial content."}}, {"@type": "Question", "name": "Where is my shortlist saved?", "acceptedAnswer": {"@type": "Answer", "text": "In your browser only. We don't see it unless you send it to us through the match form."}}]}</script>
+<header class="page-hero graph"><div class="wrap"><h1>Program explorer</h1><p class="lede">Over 40 program paths across eleven fields, compared on the same terms: route, typical time, cost band, format and demand. Save the ones you like and get matched with real programs.</p></div></header>
+<section class="section-tight">
+  <div class="wrap">
+    <div class="filters" role="search" aria-label="Filter programs">
+      <label class="visually-hidden" for="f-q">Search programs</label>
+      <input id="f-q" type="search" placeholder="Search, e.g. nursing, data, MBA">
+      <label class="visually-hidden" for="f-field">Field</label>
+      <select id="f-field"><option value="">All fields</option></select>
+      <label class="visually-hidden" for="f-route">Route</label>
+      <select id="f-route"><option value="">All routes</option><option value="degree">Degree</option><option value="certificate">Certificate / diploma</option><option value="bootcamp">Bootcamp</option><option value="apprenticeship">Apprenticeship</option></select>
+      <label class="visually-hidden" for="f-format">Format</label>
+      <select id="f-format"><option value="">Any format</option><option>Online</option><option>Hybrid</option><option>On campus</option></select>
+      <button class="chip" type="button" id="f-saved" aria-pressed="false">Saved only</button>
+      <button class="link-btn" type="button" id="f-reset">Clear filters</button>
+    </div>
+    <p class="result-count" id="result-count" aria-live="polite"></p>
+    <div class="grid g3" id="program-grid">
+      <noscript><p>Turn on JavaScript to filter programs, or <a href="match.html">get matched</a> instead.</p></noscript>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="ad-slot" data-ad="display"></div></div>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="split" style="align-items:start">
+      <div class="prose">
+        <h2>How to read these cards</h2>
+        <p><strong>Time</strong> is the typical full-time length. Part-time and online versions often take longer; accelerated tracks can be shorter.</p>
+        <p><strong>Cost</strong> is a band, not a price, because fees swing widely between countries, public and private schools, and in-state or international status. As a rough guide, $ is under about $5,000 in total, $$ is up to about $20,000, $$$ up to about $60,000 and $$$$ above that. Use the <a href="tools/roi-calculator.html">ROI calculator</a> with a school's real fees.</p>
+        <p><strong>Outlook</strong> marks fields where employers in many of the countries we cover consistently report hiring need. For current pay and demand, check official labour-market sources such as the US Bureau of Labor Statistics Occupational Outlook Handbook, Canada's Job Bank or the UK National Careers Service.</p>
+        <p><strong>The last line</strong> on each card is the gate you'll have to pass: a licence, a portfolio or an exam. Plan for it from day one.</p>
+      </div>
+      <div>
+        <h2>Before you shortlist anything</h2>
+        <ul class="checklist prose" style="font-size:1.05rem">
+          <li>Confirm the school is accredited or recognised by the right body. <a href="guides/how-to-check-accreditation.html">Here's how</a>.</li>
+          <li>For licensed careers, check the program is approved by the licensing regulator where you want to work.</li>
+          <li>Ask for outcomes data: completion rates and graduate employment, with how they were measured.</li>
+          <li>Compare total cost, not tuition alone. Fees, materials and lost income add up.</li>
+          <li>Search for scholarships before you apply, not after you're admitted.</li>
+        </ul>
+        <p><a class="btn btn-ink" href="tools/compare.html">Compare your top three</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow faq">
+    <h2>Program explorer questions</h2>
+    <details><summary>Are these real schools?</summary><p>The explorer compares program types (paths), not individual schools, so you can decide on a route first. When you click "Find programs", we match you with accredited options for that path.</p></details>
+    <details><summary>What does "Featured program slot" mean?</summary><p>It's a paid placement that schools can buy to show their program to people browsing a field. Featured listings are always labelled and never change our editorial content.</p></details>
+    <details><summary>Where is my shortlist saved?</summary><p>In your browser only. We don't see it unless you send it to us through the match form.</p></details>
+  </div>
+</section>
+{% endraw %}
