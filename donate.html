@@ -1,0 +1,99 @@
+---
+layout: "default"
+full_title: "Donate: keep Next.Education free for every student | Next.Education"
+og_title: "Donate: keep Next.Education free for every student"
+description: "Support Next.Education with a monthly or one-time gift. Donations fund free tools, research, student contest prizes, outreach and the people who build it."
+canonical: "https://next.education/donate.html"
+robots: "index, follow, max-image-preview:large"
+og_type: "website"
+nav: ""
+root: ""
+scripts: ["donate.js"]
+body_attrs: "data-no-exit"
+base: false
+---
+{% raw %}<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://next.education/"}, {"@type": "ListItem", "position": 2, "name": "Donate: keep Next.Education free for every student", "item": "https://next.education/donate.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is my donation tax-deductible?", "acceptedAnswer": {"@type": "Answer", "text": "No. Next.Education is an independent publisher, not a registered charity, so gifts aren't tax-deductible in any country."}}, {"@type": "Question", "name": "Can I cancel a monthly gift?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, any time. Reply to any receipt or contact us and we'll stop it before the next charge."}}, {"@type": "Question", "name": "Can my company sponsor instead?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Sponsorships come with recognition on the contest or tool you fund. See advertise and sponsor."}}, {"@type": "Question", "name": "Does donating affect what you publish?", "acceptedAnswer": {"@type": "Answer", "text": "No. Donors and sponsors never influence our editorial content or rankings. See our editorial standards."}}]}</script>
+<header class="page-hero graph"><div class="wrap"><h1>Keep it free for the next student</h1><p class="lede">Every tool, guide and match on Next.Education is free. Reader support pays for the research, new tools, student prizes, outreach and the people behind it, and keeps us independent of any school.</p></div></header>
+<section class="section-tight">
+  <div class="wrap wizard-shell">
+    <div class="wizard" id="donate-box">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:1.25rem">
+        <h2 style="font-size:var(--step-3);margin:0">Choose your gift</h2>
+        <div class="toggle" role="group" aria-label="Gift frequency"><button type="button" data-freq="monthly" aria-pressed="true">Monthly</button><button type="button" data-freq="once" aria-pressed="false">One-time</button></div>
+      </div>
+      <div class="amounts" id="amounts"></div>
+      <input id="d-custom" type="number" min="1" step="1" placeholder="Other amount" style="margin-top:.6rem">
+      <p id="d-impact" style="font-weight:700;margin:1rem 0" aria-live="polite"></p>
+      <label for="d-purpose">Direct my gift to</label>
+      <select id="d-purpose">
+        <option>Where it's needed most</option><option>Operations and hosting</option><option>Promotions and marketing</option><option>Hiring writers, advisors and developers</option><option>Contests and student prizes</option><option>New free tools and resources</option>
+      </select>
+      <label class="check" style="margin-top:.9rem"><input type="checkbox" id="d-fees"><span>Add a little to cover payment processing fees</span></label>
+      <div class="pay-buttons" id="pay-buttons" hidden style="margin-top:1.25rem"></div>
+      <hr style="border:0;border-top:1px solid var(--border);margin:1.5rem 0">
+      <h3 style="font-size:var(--step-1)">Pledge your gift</h3>
+      <p class="muted" id="pledge-intro">Tell us your gift and we'll email a secure payment link (card, PayPal or bank transfer) within one business day. Nothing is charged until you complete that link.</p>
+      <form data-ne-form data-subject="Donation pledge" data-success="Thank you. Your secure payment link is on its way. Check your inbox within one business day.">
+        <input type="hidden" id="p-amount" name="amount"><input type="hidden" id="p-freq" name="frequency"><input type="hidden" id="p-purpose" name="purpose">
+        <div class="form-grid">
+          <div><label for="p-name">Full name</label><input id="p-name" name="name" type="text" autocomplete="name" required></div>
+          <div><label for="p-email">Email</label><input id="p-email" name="email" type="email" autocomplete="email" required></div>
+          <div><label for="p-country">Country</label><input id="p-country" name="country" type="text" autocomplete="country-name" required></div>
+          <div><label for="p-method">Preferred payment</label><select id="p-method" name="method"><option>Card</option><option>PayPal</option><option>Bank transfer</option><option>Invoice (organisations)</option></select></div>
+          <div class="full"><label for="p-msg">Message <span class="hint" style="display:inline">(optional)</span></label><textarea id="p-msg" name="message" rows="3"></textarea></div>
+          <div class="full"><label class="check"><input type="checkbox" name="recognition" value="yes"><span>You may thank me by name on the supporters list.</span></label></div>
+          <div class="full"><label class="check"><input type="checkbox" name="employer_match" value="yes"><span>My employer may match my gift. Send me the details I'll need.</span></label></div>
+          <div class="hp" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+          <div class="full"><button class="btn btn-lg btn-block" type="submit">Pledge my gift</button></div>
+        </div>
+      </form>
+      <p class="consent" style="margin-top:1rem">Next.Education is an independent publisher, not a registered charity, so donations are not tax-deductible. Gifts support our operations and are non-refundable except in cases of error. Questions? <a href="contact.html?topic=Donations">Contact us</a>.</p>
+    </div>
+    <aside class="side-proof">
+      <div class="card">
+        <h2 style="font-size:var(--step-2)">Where your money goes</h2>
+        <p class="muted small">Planned split of reader donations toward our first goal of <strong id="goal-text">$25,000</strong>.</p>
+        <div id="meter-wrap" hidden style="margin-bottom:1rem"><div class="meter"><i id="meter-fill"></i></div><p class="small" id="meter-text" style="margin:.4rem 0 0"></p></div>
+        <div class="alloc">
+          <div class="alloc-row"><span>Contests and student prizes</span><span>25%</span><span class="bar" style="--c:var(--r-schol)"><i style="width:25%"></i></span></div>
+          <div class="alloc-row"><span>Hiring writers, advisors, developers</span><span>25%</span><span class="bar" style="--c:var(--r-degree)"><i style="width:25%"></i></span></div>
+          <div class="alloc-row"><span>Operations, hosting and tools</span><span>20%</span><span class="bar" style="--c:var(--r-cert)"><i style="width:20%"></i></span></div>
+          <div class="alloc-row"><span>Promotions and outreach to students</span><span>15%</span><span class="bar" style="--c:var(--r-boot)"><i style="width:15%"></i></span></div>
+          <div class="alloc-row"><span>New free tools and resources</span><span>15%</span><span class="bar" style="--c:var(--r-abroad)"><i style="width:15%"></i></span></div>
+        </div>
+      </div>
+      <div class="card">
+        <h2 style="font-size:var(--step-1)">Other ways to help</h2>
+        <ul style="padding-left:1.1rem;margin:0;display:grid;gap:.4rem">
+          <li><a href="advertise.html#sponsor-a-prize">Sponsor a student prize</a></li>
+          <li><a href="advertise.html">Become a corporate sponsor</a></li>
+          <li><a href="careers.html">Volunteer or work with us</a></li>
+          <li>Share a guide with one student who needs it</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head"><div><h2>What your support builds</h2></div></div>
+    <div class="grid g4">
+      <div class="card"><h3>Student prizes</h3><p class="muted">Cash prizes for the essay prize and the monthly award, paid to students.</p></div>
+      <div class="card"><h3>Research</h3><p class="muted">Time to check every guide against official sources and keep it current.</p></div>
+      <div class="card"><h3>New tools</h3><p class="muted">Calculators and planners that turn big decisions into numbers.</p></div>
+      <div class="card"><h3>Reach</h3><p class="muted">Getting free tools in front of first-generation and lower-income students.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow faq">
+    <h2>Donation questions</h2>
+    <details><summary>Is my donation tax-deductible?</summary><p>No. Next.Education is an independent publisher, not a registered charity, so gifts aren't tax-deductible in any country.</p></details>
+    <details><summary>Can I cancel a monthly gift?</summary><p>Yes, any time. Reply to any receipt or <a href="contact.html?topic=Donations">contact us</a> and we'll stop it before the next charge.</p></details>
+    <details><summary>Can my company sponsor instead?</summary><p>Yes. Sponsorships come with recognition on the contest or tool you fund. See <a href="advertise.html">advertise and sponsor</a>.</p></details>
+    <details><summary>Does donating affect what you publish?</summary><p>No. Donors and sponsors never influence our editorial content or rankings. See our <a href="editorial-standards.html">editorial standards</a>.</p></details>
+  </div>
+</section>
+{% endraw %}
