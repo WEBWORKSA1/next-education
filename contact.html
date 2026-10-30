@@ -1,0 +1,57 @@
+---
+layout: "default"
+full_title: "Contact Next.Education | Next.Education"
+og_title: "Contact Next.Education"
+description: "Contact Next.Education about advising, partnerships, advertising, contests, donations, careers, press or corrections. We reply within two business days."
+canonical: "https://next.education/contact.html"
+robots: "index, follow, max-image-preview:large"
+og_type: "website"
+nav: ""
+root: ""
+scripts: []
+body_attrs: "data-no-exit data-no-sticky"
+base: false
+---
+{% raw %}<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://next.education/"}, {"@type": "ListItem", "position": 2, "name": "Contact Next.Education", "item": "https://next.education/contact.html"}]}</script>
+<header class="page-hero graph"><div class="wrap"><h1>Contact us</h1><p class="lede">Send a message and we'll reply within two business days. For offers on this website or domain, sponsorship, advertising or partnerships, you can also reach the owner directly.</p></div></header>
+<section class="section-tight">
+  <div class="wrap wizard-shell">
+    <form class="wizard" id="contact-form" data-ne-form data-subject="Contact form" data-success="Message sent. We'll reply within two business days.">
+      <div class="form-grid">
+        <div><label for="ct-name">Full name</label><input id="ct-name" name="name" type="text" autocomplete="name" required></div>
+        <div><label for="ct-email">Email</label><input id="ct-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="full"><label for="ct-topic">Topic</label>
+          <select id="ct-topic" name="topic" required>
+            <option value="">Choose…</option><option>General question</option><option>Advising</option><option>Schools and partners</option><option>Advertising and sponsorship</option><option>Contest</option><option>Donations</option><option>Careers</option><option>Press</option><option>Correction</option><option>Scholarship suggestion</option><option>Privacy request</option>
+          </select></div>
+        <div class="full"><label for="ct-msg">Message</label><textarea id="ct-msg" name="message" rows="7" required></textarea></div>
+        <div class="full"><label class="check"><input type="checkbox" name="consent" value="yes" required><span>Next.Education may use these details to reply to my message, as described in the <a href="privacy.html">privacy policy</a>.</span></label></div>
+        <div class="hp" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+        <div class="full"><button class="btn btn-lg btn-block" type="submit">Send message</button></div>
+      </div>
+    </form>
+    <aside class="side-proof">
+      <div class="card">
+        <h2 style="font-size:var(--step-2)">Prefer email?</h2>
+        <p class="muted">Open a new message in your own email app.</p>
+        <a class="btn btn-ink" href="contact.html" data-mail="Next.Education inquiry">Email us</a>
+      </div>
+      <div class="card">
+        <h2 style="font-size:var(--step-2)">Website, domain or partnership</h2>
+        <p class="muted">Interested in this website, the domain name, sponsorship, advertising or a partnership?</p>
+        <a class="btn" href="https://web.works/contact" target="_blank" rel="noopener">Contact the owner</a>
+      </div>
+      <div class="card">
+        <h2 style="font-size:var(--step-1)">Quick links</h2>
+        <ul style="padding-left:1.1rem;margin:0;display:grid;gap:.35rem">
+          <li><a href="match.html#advising">Book a free advising call</a></li>
+          <li><a href="partners.html">Partner as a school</a></li>
+          <li><a href="advertise.html#media-kit">Request the media kit</a></li>
+          <li><a href="faq.html">Read the FAQ</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+<script>document.addEventListener("DOMContentLoaded",function(){var t=new URLSearchParams(location.search).get("topic"),s=document.getElementById("ct-topic");if(t&&s){Array.prototype.forEach.call(s.options,function(o){if(o.text===t)s.value=t})}});</script>
+{% endraw %}
