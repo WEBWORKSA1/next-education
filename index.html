@@ -1,0 +1,220 @@
+---
+layout: "default"
+full_title: "Next.Education | Choose your next step in education"
+og_title: "Next.Education | Choose your next step in education"
+description: "Compare degrees, certificates, bootcamps, apprenticeships, scholarships and study abroad. Free tools, honest guides and a one-minute program match."
+canonical: "https://next.education/"
+robots: "index, follow, max-image-preview:large"
+og_type: "website"
+nav: ""
+root: ""
+scripts: ["route-map.js"]
+body_attrs: ""
+base: false
+---
+{% raw %}<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Next.Education", "url": "https://next.education/", "description": "Compare degrees, certificates, bootcamps, apprenticeships, scholarships and study abroad. Free tools, honest guides and a one-minute program match.", "inLanguage": "en"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Next.Education", "url": "https://next.education/", "logo": "https://next.education/assets/img/logo.png"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Next.Education really free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every tool, guide and the match itself are free. We're funded by advertising, by schools that pay to feature their programs (always labelled) and by reader donations."}}, {"@type": "Question", "name": "Do you sell my information?", "acceptedAnswer": {"@type": "Answer", "text": "No. If you ask to be matched or to hear from schools, we share your details only with the education providers relevant to your request, and only with your consent. Read the privacy policy."}}, {"@type": "Question", "name": "Which countries do you cover?", "acceptedAnswer": {"@type": "Answer", "text": "Our guides and tools are written for learners in the United States, Canada, the United Kingdom, India and Australia, and most advice applies anywhere. Where rules differ, we name the official body to check."}}, {"@type": "Question", "name": "Are you a school or an admissions agent?", "acceptedAnswer": {"@type": "Answer", "text": "Neither. Next.Education is an independent publisher. We don't grant credentials or make admission decisions."}}]}</script>
+
+<section class="hero graph" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div>
+      <h1 id="hero-title">Where does your education go next?</h1>
+      <p class="lede">Compare every route, from degrees and bootcamps to apprenticeships and free courses. Then get a shortlist that fits your goal, budget and schedule.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-lg" href="match.html">Get matched free</a>
+        <a class="btn btn-ghost btn-lg" href="tools/path-quiz.html">Take the 7-question quiz</a>
+      </div>
+      <ul class="hero-proof">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg>Free, no account</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg>Six routes compared</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg>For the US, Canada, UK, India, Australia</li>
+      </ul>
+    </div>
+    <div class="route-card">
+      <svg id="route-map" class="route-map" viewBox="0 0 700 430" role="group" aria-label="Route map of education paths. Select a station to see details."></svg>
+      <div class="route-panel" id="route-panel" aria-live="polite">
+        <h3>Degree</h3>
+        <a class="btn btn-sm" href="match.html?goal=degree">Start this route</a>
+        <p>Select a station on the map to compare routes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" aria-labelledby="who-title">
+  <div class="wrap">
+    <h2 id="who-title" class="visually-hidden">Who Next.Education is for</h2>
+    <div class="grid g4">
+      <a class="card card-link" href="match.html?who=student"><h3>I'm finishing school</h3><p class="muted">Pick a program, a country and a way to pay for it.</p></a>
+      <a class="card card-link" href="match.html?who=adult"><h3>I'm changing careers</h3><p class="muted">Find the shortest credible credential into new work.</p></a>
+      <a class="card card-link" href="match.html?who=parent"><h3>I'm a parent</h3><p class="muted">Compare costs, aid and outcomes before you commit.</p></a>
+      <a class="card card-link" href="partners.html"><h3>I represent a school</h3><p class="muted">Reach students who are actively choosing a program.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="routes-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2 id="routes-title">Six routes, side by side</h2>
+      <p>Typical ranges only. Costs and lengths vary a lot by country and school, so use the tools to plug in real numbers.</p></div>
+      <a class="btn btn-ghost" href="programs.html">Browse 40+ program paths</a>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Route</th><th scope="col">Typical length</th><th scope="col">Typical cost</th><th scope="col">Best when you want</th><th scope="col">Watch out for</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><span class="route-dot" style="background:var(--r-degree)"></span>Degree</th><td>2–5 years</td><td>$$ to $$$$</td><td>A licensed profession, research or the widest options</td><td>Debt and time out of full-time work</td></tr>
+          <tr><th scope="row"><span class="route-dot" style="background:var(--r-cert)"></span>Certificate</th><td>3–12 months</td><td>$ to $$</td><td>One job-ready skill, fast</td><td>Credentials employers don't recognise</td></tr>
+          <tr><th scope="row"><span class="route-dot" style="background:var(--r-boot)"></span>Bootcamp</th><td>12–26 weeks</td><td>$$ to $$$</td><td>A career switch into tech</td><td>Inflated job-placement claims</td></tr>
+          <tr><th scope="row"><span class="route-dot" style="background:var(--r-appr)"></span>Apprenticeship</th><td>1–5 years</td><td>You're paid</td><td>Hands-on skilled work</td><td>Finding an employer sponsor</td></tr>
+          <tr><th scope="row"><span class="route-dot" style="background:var(--r-abroad)"></span>Study abroad</th><td>1–4 years</td><td>$$ to $$$$</td><td>An international career and network</td><td>Visa rules that change</td></tr>
+          <tr><th scope="row"><span class="route-dot" style="background:var(--r-free)"></span>Free courses</th><td>Self-paced</td><td>Free to $</td><td>To test an interest first</td><td>Finishing without a deadline</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted">Not sure which row is you? <a href="guides/how-to-choose-your-next-education-step.html">Read the decision guide</a> or <a href="tools/path-quiz.html">take the quiz</a>.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="match-title">
+  <div class="wrap split">
+    <div>
+      <h2 id="match-title">Get a shortlist built around your life</h2>
+      <p class="lede" style="font-size:var(--step-1);color:var(--ink-2)">Tell us what you want to study, how you want to learn and what you can spend. We'll send program types, scholarships to check and a step-by-step plan.</p>
+      <ul class="benefits">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>Six questions, about a minute</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>Online, part-time and on-campus options</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>A free call with an advisor if you want one</span></li>
+      </ul>
+    </div>
+    <form class="wizard" data-handoff aria-label="Start your match">
+      <p class="progress-label" style="margin:0 0 .75rem">Step 1 of 6</p>
+      <fieldset style="border:0;padding:0;margin:0">
+        <legend class="label" style="font-size:1.25rem;font-family:var(--f-display);margin-bottom:.8rem">What do you want to do next?</legend>
+        <div class="tiles">
+          <label class="tile"><input type="radio" name="goal" value="degree" checked><span>Earn a degree<small>Bachelor's, master's, doctorate</small></span></label>
+          <label class="tile"><input type="radio" name="goal" value="certificate"><span>Get a certificate<small>Months, not years</small></span></label>
+          <label class="tile"><input type="radio" name="goal" value="bootcamp"><span>Do a bootcamp<small>Tech career switch</small></span></label>
+          <label class="tile"><input type="radio" name="goal" value="abroad"><span>Study abroad<small>Any level</small></span></label>
+          <label class="tile"><input type="radio" name="goal" value="career-change"><span>Change careers<small>Retrain while working</small></span></label>
+          <label class="tile"><input type="radio" name="goal" value="scholarship"><span>Find funding<small>Scholarships and aid</small></span></label>
+        </div>
+      </fieldset>
+      <button class="btn btn-lg btn-block" type="submit" style="margin-top:1.25rem">Continue</button>
+    </form>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="tools-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2 id="tools-title">Free tools for real decisions</h2><p>Run the numbers before you sign anything. Everything runs in your browser and nothing you type is stored on a server.</p></div>
+      <a class="btn btn-ghost" href="tools.html">See all tools</a>
+    </div>
+    <div class="grid g3"><a class="card card-link" href="tools/path-quiz.html"><div class="tool-icon"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7m0 3h.01"/></svg></div><h3>Which route fits me?</h3><p class="muted">Seven questions that point you to a degree, certificate, bootcamp, apprenticeship or free-first path.</p></a><a class="card card-link" href="tools/roi-calculator.html"><div class="tool-icon"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></div><h3>Education ROI calculator</h3><p class="muted">Payback period and 10-year net gain for any program, including the income you give up while studying.</p></a><a class="card card-link" href="tools/loan-calculator.html"><div class="tool-icon"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18M5 10V20m4-10v10m6-10v10m4-10v10M2 21h20M12 3l9 5H3l9-5Z"/></svg></div><h3>Student loan calculator</h3><p class="muted">Monthly payment, total interest and a payoff schedule for any loan amount and rate.</p></a><a class="card card-link" href="tools/budget-planner.html"><div class="tool-icon"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h18v12H3zM3 7l3-4h12l3 4M16 13h2"/></svg></div><h3>Student budget planner</h3><p class="muted">Monthly costs vs income for home or abroad, with a gap you can plan scholarships around.</p></a><a class="card card-link" href="tools/gpa-calculator.html"><div class="tool-icon"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10m6 10V4m6 16v-7m4 7H2"/></svg></div><h3>GPA calculator</h3><p class="muted">Weighted 4.0-scale GPA from letter grades or percentages, with a target-grade helper.</p></a><a class="card card-link" href="tools/compare.html"><div class="tool-icon"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v18M16 3v18M3 8h5m8 0h5M3 16h5m8 0h5"/></svg></div><h3>Program comparer</h3><p class="muted">Put up to three programs side by side on cost, time, format and outcomes.</p></a></div>
+  </div>
+</section>
+
+<div class="wrap"><div class="ad-slot" data-ad="display"></div></div>
+
+<section class="section" aria-labelledby="guides-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2 id="guides-title">Guides that answer the hard questions</h2><p>Researched, plain-language, linked to official sources and updated when rules change.</p></div>
+      <a class="btn btn-ghost" href="guides.html">All 15 guides</a>
+    </div>
+    <div class="grid g3"><a class="card card-link" href="guides/how-to-choose-your-next-education-step.html"><div class="meta"><span class="tag">Planning</span><span>6 min read</span></div><h3>Degree, certificate, bootcamp or apprenticeship? How to choose your next education step</h3><p class="muted">Compare degrees, diplomas, certificates, bootcamps and apprenticeships on time, cost, risk and entry rules, then use a simple framework to pick your next step.</p></a><a class="card card-link" href="guides/how-to-check-accreditation.html"><div class="meta"><span class="tag">Planning</span><span>6 min read</span></div><h3>How to verify a school&#x27;s accreditation and spot diploma mills</h3><p class="muted">Check whether a college or university is recognised in the US, Canada, UK, India or Australia using official registers, and spot the red flags of diploma mills.</p></a><a class="card card-link" href="guides/coding-bootcamp-checklist.html"><div class="meta"><span class="tag">Programs</span><span>6 min read</span></div><h3>Coding bootcamps: what to check before you pay</h3><p class="muted">Before you pay for a coding bootcamp, learn to read job-placement claims, judge curriculum and instructors, understand ISAs, and test your fit for free.</p></a><a class="card card-link" href="guides/online-degree-checklist.html"><div class="meta"><span class="tag">Programs</span><span>6 min read</span></div><h3>How to judge an online degree program: a 12-point checklist</h3><p class="muted">Use this 12-point checklist to judge an online degree before you enrol: accreditation, format, faculty, support, total cost, transfer credit and outcomes.</p></a><a class="card card-link" href="guides/financial-aid-basics.html"><div class="meta"><span class="tag">Paying for school</span><span>6 min read</span></div><h3>Grants, Loans and Work-Study: Financial Aid Basics</h3><p class="muted">Understand need-based vs merit aid, grants vs loans vs work-study, how loan interest accrues, and where to apply in the US, Canada, UK, India and Australia.</p></a><a class="card card-link" href="guides/scholarship-strategy.html"><div class="meta"><span class="tag">Paying for school</span><span>6 min read</span></div><h3>How to Find and Win Scholarships: A Repeatable Weekly System</h3><p class="muted">A practical weekly system for finding and winning scholarships: where to search, how to track deadlines, reuse essays ethically and avoid common scams.</p></a></div>
+  </div>
+</section>
+
+<section class="section band-yellow" aria-labelledby="contest-title">
+  <div class="wrap split">
+    <div>
+      <h2 id="contest-title"><span data-c="essay-name">The Next Step Essay Prize</span></h2>
+      <p style="font-size:var(--step-1)">Write 600 words on the step you're taking next and why. <span data-c="essay-total">$850</span> in prizes, judged on substance, not polish. Entry is free.</p>
+      <p><strong>Entries open <span data-c="essay-opens">December 1, 2026</span></strong> and close <span data-c="essay-closes">February 28, 2027</span>.</p>
+      <div class="hero-ctas" style="margin-bottom:0"><a class="btn btn-ink btn-lg" href="contests.html">See prizes and enter</a><a class="btn btn-ghost btn-lg" href="advertise.html#sponsor-a-prize" style="border-color:#14213D;color:#14213D">Sponsor a prize</a></div>
+    </div>
+    <div class="grid g3">
+      <div class="prize first"><span>Grand prize</span><b data-c="essay-first">$500</b></div>
+      <div class="prize"><span>Runner-up</span><b data-c="essay-second">$250</b></div>
+      <div class="prize"><span>Third place</span><b data-c="essay-third">$100</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="video-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2 id="video-title">Watch and learn, free</h2><p>Hand-picked talks and full courses from TED, CrashCourse, freeCodeCamp and more. 24 videos in the library.</p></div>
+      <a class="btn btn-ghost" href="learn.html">Open the learning hub</a>
+    </div>
+    <div class="grid g3" id="video-grid"><article class="video-card" data-cat="Choosing your path"><div class="video" data-id="eGR2Yf6yBRA" data-title="How to choose a major"></div><h3>How to choose a major</h3><p>A practical way to narrow majors without locking yourself in.</p><p class="small muted">CrashCourse</p></article><article class="video-card" data-cat="Learning science"><div class="video" data-id="5MgBikgcWnY" data-title="The first 20 hours: how to learn anything"></div><h3>The first 20 hours: how to learn anything</h3><p>Deconstruct a skill and practise the parts that matter first.</p><p class="small muted">TEDx Talks · Josh Kaufman</p></article><article class="video-card" data-cat="Free full courses"><div class="video" data-id="rfscVS0vtbw" data-title="Learn Python: full course for beginners"></div><h3>Learn Python: full course for beginners</h3><p>A complete beginner Python course you can follow end to end.</p><p class="small muted">freeCodeCamp.org</p></article></div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="schol-title">
+  <div class="wrap split">
+    <div>
+      <h2 id="schol-title">Scholarships from official sources only</h2>
+      <p>Our finder lists long-running government, foundation and university awards, each linked to the funder's own site. No pay-to-apply schemes, no recycled lists.</p>
+      <ul class="pill-list" aria-label="Examples">
+        <li class="tag">Fully funded master's</li><li class="tag">Undergraduate awards</li><li class="tag">Need-based grants</li><li class="tag">For international students</li>
+      </ul>
+      <p style="margin-top:1.25rem"><a class="btn" href="scholarships.html">Open the scholarship finder</a></p>
+    </div>
+    <div class="card">
+      <h3>Get scholarship alerts</h3>
+      <p class="muted">New awards and closing deadlines for your level and country, twice a month.</p>
+      <form data-ne-form data-subject="Scholarship alerts signup" data-bonus="newsletter" data-success="You're in. Your first scholarship alert arrives within two weeks.">
+        <div class="form-grid">
+          <div><label for="sa-name">First name</label><input id="sa-name" name="name" type="text" autocomplete="given-name" required></div>
+          <div><label for="sa-email">Email</label><input id="sa-email" name="email" type="email" autocomplete="email" required></div>
+          <div><label for="sa-level">Study level</label><select id="sa-level" name="level" required><option value="">Choose…</option><option>High school / secondary</option><option>Undergraduate</option><option>Master's</option><option>Doctorate</option><option>Vocational / certificate</option></select></div>
+          <div><label for="sa-country">Your country</label><input id="sa-country" name="country" type="text" autocomplete="country-name" required></div>
+          <input type="hidden" name="list" value="Scholarship alerts">
+          <div class="hp" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+          <div class="full"><button class="btn btn-ink btn-block" type="submit">Send me alerts</button></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="support-title">
+  <div class="wrap">
+    <div class="grid g3">
+      <div class="card">
+        <div class="tool-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.6-9 9-9 9Z"/></svg>
+        </div>
+        <h3 id="support-title">Keep it free for the next student</h3>
+        <p class="muted">Donations pay for research, new tools, contest prizes and the people who build them.</p>
+        <a class="btn btn-ink" href="donate.html">Support Next.Education</a>
+      </div>
+      <div class="card">
+        <div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11M10 21v-5h4v5"/></svg></div>
+        <h3>Schools and training providers</h3>
+        <p class="muted">Feature your programs to people who are actively deciding, with qualified enquiries delivered to your team.</p>
+        <a class="btn btn-ink" href="partners.html">Partner with us</a>
+      </div>
+      <div class="card">
+        <div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4h6v3M3 13h18"/></svg></div>
+        <h3>Work with us</h3>
+        <p class="muted">Writers, advisors, video creators and campus ambassadors. Remote, flexible and paid.</p>
+        <a class="btn btn-ink" href="careers.html">See open roles</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="faq-title">
+  <div class="wrap narrow faq">
+    <h2 id="faq-title">Questions people ask first</h2>
+    <details><summary>Is Next.Education really free?</summary><p>Yes. Every tool, guide and the match itself are free. We're funded by advertising, by schools that pay to feature their programs (always labelled) and by reader donations.</p></details>
+    <details><summary>Do you sell my information?</summary><p>No. If you ask to be matched or to hear from schools, we share your details only with the education providers relevant to your request, and only with your consent. Read the <a href="privacy.html">privacy policy</a>.</p></details>
+    <details><summary>Which countries do you cover?</summary><p>Our guides and tools are written for learners in the United States, Canada, the United Kingdom, India and Australia, and most advice applies anywhere. Where rules differ, we name the official body to check.</p></details>
+    <details><summary>Are you a school or an admissions agent?</summary><p>Neither. Next.Education is an independent publisher. We don't grant credentials or make admission decisions.</p></details>
+  </div>
+</section>
+{% endraw %}
